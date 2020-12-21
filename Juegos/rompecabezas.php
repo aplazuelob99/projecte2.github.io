@@ -36,6 +36,9 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
+              <li><a href="juego.php">Fruteria</a></li>
+              <li><a href="recogercarne.php">Carniceria</a></li>
+              <li><a href="cesta.php">Panaderia</a></li>
               <li><a href="../index.php #ofertas">Ofertas</a></li>
               <li class="active"><a href="../index.php">Salir</a></li>
                           
