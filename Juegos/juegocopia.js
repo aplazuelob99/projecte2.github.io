@@ -644,7 +644,7 @@ function apagarpulsador3(pulsador){
     }
 }
 function siguientejuego(){
-    window.location.href = "encestar.php";
+    window.location.href = "recogercarne.php";
 }
 siguiente.style.cssText ="display: none";
 empezar.addEventListener("click", cuentaatras);
