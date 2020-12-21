@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../Imagenes_puzzle/fondopeces.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.cuentaregresiva{
+  color: white;
+}
+#countdown{
+  color: white;
+  right: 60px;
+}
+
+.parrafo{
+  color: white;
+  position: relative;
+}
+
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+  
+#entorno {
+    display: block;
+    margin: 0 auto;
+}
+
+#fondo{
+    opacity: 0.3;
+}
+
+
+
+
+
+#siguiente{
+  background-image: url("../img/Flechajuego.png");
+  background-size: 100% 100%;
+  background-position: center;
+  border-color: goldenrod !important;
+  position: absolute;
+  right: 680px;
+  height: 80px;
+  width: 80px;
+  bottom: 240px;
+  border-radius: 30px 30px;
+  color: white;
+}
