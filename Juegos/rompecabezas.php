@@ -18,7 +18,7 @@
     <script src="script_rompecabezas.js" language="javascript" type="text/javascript"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Rompecabezas</title>
-    <link rel="icon" type="image/png" href="Imagenes_puzzle/puzzle.png"/>
+    <link rel="icon" type="image/png" href="imagenes_puzzle/puzzle.png"/>
 
 </head>
 <body>
@@ -36,10 +36,6 @@
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li><a href="juego.php">Fruteria</a></li>
-              <li><a href="recogercarne.php">Carniceria</a></li>
-              <li><a href="cesta.php">Panaderia</a></li>
-              <li><a href="../index.php #ofertas">Ofertas</a></li>
               <li class="active"><a href="../index.php">Salir</a></li>
                           
               <!-- <li class="get-started"><a href="#about">Iniciar session</a></li>
@@ -66,6 +62,11 @@
             <div id="botonfondo" class="container">
               <a href="../index.php"><img src="Imagenes_puzzle/home.png" height="30" width="45" alt="Botón"></a>
             </div> 
+
+            <button onclick="finalizado()">Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
+
+            <p id="demo" style="color: white;"></p>
+
           </div>
         
 

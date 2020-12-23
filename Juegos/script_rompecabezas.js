@@ -7,7 +7,7 @@ var totalTime = 60;
 function updateClock() {
 document.getElementById('countdown').innerHTML = totalTime;
 if(totalTime==0){
-alert('Se acabo el tiempo, puntuacion 100');
+alert('Se acabo el tiempo,reinicia la pagina para volver a jugar');
 }else{
 totalTime-=1;
 setTimeout("updateClock()",1000);
@@ -147,6 +147,16 @@ function victoria(){
 siguiente.addEventListener ("click", function(){ //funcion para pasar a siguiente juego 
 	juego = false;
 	siguiente.style.visibility = "hidden";
-	window.location.href = "juego.php";
+	window.location.href = "enigma_marc/index.html";
 
 })
+
+function finalizado() {
+	var txt;
+	if (confirm("Pulsa el boton")) {
+	  txt = "El puzzle es correcto continua al siguiente juego";
+	} else {
+	  txt = "has apretado cancelar reinicia la pagina para volver a jugar!";
+	}
+	document.getElementById("demo").innerHTML = txt;
+  }
