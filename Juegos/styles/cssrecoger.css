@@ -151,3 +151,13 @@ body{
     left: 0px;
     font-size: 18px;
 }
+
+#controles{
+    border: 1px 1px;
+    border-radius: 5%;
+    background-color: gold;
+    position: absolute;
+    left: 1145px;
+    padding-bottom: 5px;
+    text-align: center;
+}

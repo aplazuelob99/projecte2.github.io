@@ -45,41 +45,45 @@ if(juego == false){
 
 document.addEventListener('keyup', function(event){
 
-    if (event.keyCode == derecha){
-        var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
-        if (Left < 1060){
-            var nuevapos = Left + velocidad;
-            jugador.style.left = nuevapos + "px";  
-            jugador.style.backgroundImage = "url('img/2jugador.png')";
+    if (juego == true){
+        
+        if (event.keyCode == derecha){
+            var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+            if (Left < 1060){
+                var nuevapos = Left + velocidad;
+                jugador.style.left = nuevapos + "px";  
+                jugador.style.backgroundImage = "url('img/2jugador.png')";
+            }
+        }
+    
+        if (event.keyCode == izquierda){
+            var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+            if (Left > 20){
+                var nuevapos = Left - velocidad;
+                jugador.style.left = nuevapos + "px";
+                jugador.style.backgroundImage = "url('img/jugador.png')";
+            }
+        }
+    
+        if (event.keyCode == abajo){
+            var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+            if (Top < 450){
+                var nuevapos = Top + velocidad;
+                jugador.style.top = nuevapos + "px";
+                jugador.style.backgroundImage = "url('img/2jugador.png')";
+            }
+        }
+    
+        if (event.keyCode == arriba){
+            var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+            if (Top > 15){
+                var nuevapos = Top - velocidad;
+                jugador.style.top = nuevapos + "px";
+                jugador.style.backgroundImage = "url('img/jugador.png')";
+            }
         }
     }
-
-    if (event.keyCode == izquierda){
-        var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
-        if (Left > 20){
-            var nuevapos = Left - velocidad;
-            jugador.style.left = nuevapos + "px";
-            jugador.style.backgroundImage = "url('img/jugador.png')";
-        }
-    }
-
-    if (event.keyCode == abajo){
-        var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
-        if (Top < 450){
-            var nuevapos = Top + velocidad;
-            jugador.style.top = nuevapos + "px";
-            jugador.style.backgroundImage = "url('img/2jugador.png')";
-        }
-    }
-
-    if (event.keyCode == arriba){
-        var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
-        if (Top > 15){
-            var nuevapos = Top - velocidad;
-            jugador.style.top = nuevapos + "px";
-            jugador.style.backgroundImage = "url('img/jugador.png')";
-        }
-    }
+   
 
 });
 
@@ -336,7 +340,8 @@ setInterval(function(){
             comidah = comida.offsetHeight;
             comidax = comida.offsetLeft;
             comiday = comida.offsetTop;
-
+        if (juego == true){
+            
             //Comprobamos la colision del jugador con la cesta de la comida
             if((jugadorx + jugadorw) > comidax && jugadorx < (comidax + comidaw) && (jugadory + jugadorh) > comiday 
             && jugadory < (comiday + comidah)){
@@ -377,6 +382,8 @@ setInterval(function(){
                 }
                     
             }
+        }
+            
     });
 
     //Creamos el contador para que el jugador tenga 1 minuto de tiempo y para ello repetimos la funcion en un intervalo de 1000ms (1 segundo)
