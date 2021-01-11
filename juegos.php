@@ -53,7 +53,7 @@
 
                             <li><a href="index.php #tiendas">Tiendas</a></li>
                     
-                            <li class="drop-down"><a href="Juegos/juego.php">Juegos</a>
+                            <li class="drop-down"><a href="juegos.php">Juegos</a>
 
                                 <ul>
 
