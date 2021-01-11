@@ -38,7 +38,7 @@
 
                     <div class="logo mr-auto">
 
-                        <h1 class="text-light"><a href="index.html"><span>Mercado Barcelona</span></a></h1>
+                        <h1 class="text-light"><a href="index.php"><span>Mercado Barcelona</span></a></h1>
 
                     </div>
 

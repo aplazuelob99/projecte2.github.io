@@ -49,7 +49,7 @@ document.addEventListener('keyup', function(event){
         
         if (event.keyCode == derecha){
             var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
-            if (Left < 1060){
+            if (Left < 900){
                 var nuevapos = Left + velocidad;
                 jugador.style.left = nuevapos + "px";  
                 jugador.style.backgroundImage = "url('img/2jugador.png')";
@@ -100,7 +100,7 @@ setInterval(function(){
 
         //Declaramos bloques para que se muevan por la pantalla
         if(obstaculo1.dataset.izquierda == "true"){
-            if (obstaculo1iz < 1050){
+            if (obstaculo1iz < 930){
                 var nuevaposobst1 = obstaculo1iz + velocidadmedia;
                 obstaculo1.style.left = nuevaposobst1 + "px";
             }
@@ -122,7 +122,7 @@ setInterval(function(){
         }
 
         if(obstaculo2.dataset.izquierda == "true"){
-            if (obstaculo2iz < 1050){
+            if (obstaculo2iz < 930){
                 var nuevaposobst2 = obstaculo2iz + velocidadalta;
                 obstaculo2.style.left = nuevaposobst2 + "px";
 
@@ -145,7 +145,7 @@ setInterval(function(){
         }
 
         if(obstaculo3.dataset.izquierda == "true"){
-            if (obstaculo3iz < 1050){
+            if (obstaculo3iz < 930){
                 var nuevaposobst3 = obstaculo3iz + velocidadlenta;
                 obstaculo3.style.left = nuevaposobst3 + "px";
             }
@@ -166,7 +166,7 @@ setInterval(function(){
         }
 
         if(obstaculo4.dataset.izquierda == "true"){
-            if (obstaculo4iz < 1050){
+            if (obstaculo4iz < 930){
                 var nuevaposobst4 = obstaculo4iz + velocidadmedia;
                 obstaculo4.style.left = nuevaposobst4 + "px";
 
@@ -188,7 +188,7 @@ setInterval(function(){
         }
 
         if(obstaculo5.dataset.izquierda == "true"){
-            if (obstaculo5iz < 1050){
+            if (obstaculo5iz < 930){
                 var nuevaposobst5 = obstaculo5iz + velocidadlenta;
                 obstaculo5.style.left = nuevaposobst5 + "px";
             }
@@ -355,14 +355,14 @@ setInterval(function(){
 
                 if (parseInt(comida.style.top) == 470 && parseInt(comida.style.left) == 120){
                     comida.style.top = 5 + "px";
-                    comida.style.left = 850 + "px";
+                    comida.style.left = 800 + "px";
 
                 }else if(parseInt(comida.style.top) == 5){
                     comida.style.top = 470 + "px";
                     comida.style.left = 850 + "px";
                     
 
-                }else if(parseInt(comida.style.left) == 850){
+                }else if(parseInt(comida.style.left) == 800){
                     comida.style.top = 5 + "px";
                     comida.style.left = 120 + "px";
                 }
