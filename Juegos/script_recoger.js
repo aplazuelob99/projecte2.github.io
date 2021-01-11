@@ -23,7 +23,7 @@ var obstaculo2w, obstaculo2h, obstaculo2x, obstaculo2y;
 var obstaculo3w, obstaculo3h, obstaculo3x, obstaculo3y;
 var obstaculo4w, obstaculo4h, obstaculo4x, obstaculo4y;
 //Velocidades en las que se mueven los div
-var velocidad = 35;
+var velocidad = 15;
 var velocidadlenta = 1;
 var velocidadmedia = 2;
 var velocidadalta = 3;
@@ -43,7 +43,7 @@ if(juego == false){
     "\n Cuidado debes mantener la distancia de seguridad necesaria y no chocarte entre la otra gente que ha ido a comprar a la tienda. \n ¡MUCHA SUERTE!")
 }
 
-document.addEventListener('keyup', function(event){
+document.addEventListener('keydown', function(event){
 
     if (juego == true){
         
@@ -67,7 +67,7 @@ document.addEventListener('keyup', function(event){
     
         if (event.keyCode == abajo){
             var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
-            if (Top < 450){
+            if (Top < 470){
                 var nuevapos = Top + velocidad;
                 jugador.style.top = nuevapos + "px";
                 jugador.style.backgroundImage = "url('img/2jugador.png')";
@@ -362,7 +362,7 @@ setInterval(function(){
                     comida.style.left = 850 + "px";
                     
 
-                }else if(parseInt(comida.style.left) == 800){
+                }else if(parseInt(comida.style.left) == 850){
                     comida.style.top = 5 + "px";
                     comida.style.left = 120 + "px";
                 }

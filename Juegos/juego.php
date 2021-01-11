@@ -13,6 +13,9 @@
         <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/cssjuego.css" type="text/css">
         <link href="../assets/css/style.css" rel="stylesheet">
+
+        <title>Macedonia</title>
+      <link rel="icon" type="image/png" href="img/piña.png"/>
     </head>
 <body>
 <!-- ======= Header ======= -->
@@ -41,7 +44,8 @@
     
 <div class="contenedor" style="margin-top: 0%">
 <div id="capanieve"></div>
-<h1 id="salida">MACEDONIA</h1>
+  <h1 id="salida">MACEDONIA</h1>
+
     <h2 id="puntos" >Puntos:</h2>
     
     <div class="pantalla" id="pantalla" style="left: 27%; top: 15%">
