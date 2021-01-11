@@ -71,7 +71,7 @@
               <a href="../index.php"><img src="Imagenes_puzzle/home.png" height="30" width="45" alt="Botón"></a>
             </div> 
 
-            <button onclick="finalizado()">Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
+            <button onclick=finalizado()>Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
 
             <p id="demo" style="color: white;"></p>
 
