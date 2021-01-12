@@ -51,9 +51,51 @@
                         <li><a href="Juegos/rompecabezas.php">Pescaderia</a></li>
                       </ul>
             </li>
+            
+              <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label">Iniciar sesión</label>
 
-            <li class="get-started"><a href="#about">Iniciar session</a></li>
-            <li class="get-started"><a href="#about">Registrarse</a></li>
+                <ul id="columsess">
+
+                  <h5 id="titulosess">Entra en tu perfil</h5>
+
+                  <form action="" method="POST" enctype="multipart/form-data">
+
+                    <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
+
+                    <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>
+
+                    <button type="submit" id="botonsess" name="añadir">Entrar</button>
+
+                  </form>
+
+                </ul>
+
+              </li>
+
+              <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label">Registrarse</label>
+
+                <ul id="columsess">
+
+                  <h5 id="titulosess">Create una cuenta</h5>
+
+                  <form action="" method="POST" enctype="multipart/form-data">
+
+                    <li id="iniciarsess"><input class="form-control" type="text" name="nombre" placeholder="Nombre"></li>
+
+                    <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico" required></li>
+
+                    <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña" required></li>
+
+                    <li id="iniciarsess"><input class="form-control" type="password" name="password2" placeholder="Repite contraseña" required></li>
+
+                    <button type="submit" id="botonsess" name="añadir">Crear cuenta</button>
+
+                  </form>
+
+                </ul>
+
+              </li>
+              
           </ul>
         </nav><!-- .nav-menu -->
       </div><!-- End Header Container -->
