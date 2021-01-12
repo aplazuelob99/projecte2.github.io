@@ -157,7 +157,7 @@ var pulsverde = document.querySelector('#verde'),
         pulsblanco.style.cssText = blancoapagado;
         pulsazul.style.cssText = azulapagado;
         
-        salida.innerHTML = 'NIVEL' + nivel;
+        salida.innerHTML = 'NIVEL ' + nivel;
         puntos.innerHTML ='Puntos: ' + puntuaje;
 
     }
@@ -296,6 +296,7 @@ var pulsverde = document.querySelector('#verde'),
             swal("Muy bien, estas listo para el siguiente nivel ?, en este nivel seran 6 frutas pero no solo cambia eso.");
             indice = 0;
             puntuaje += 200;
+            puntos.innerHTML ='Puntos: ' + puntuaje;
             pantalla.removeEventListener('click',comprueba);
             setTimeout(nivel2, 100);
         }
@@ -326,8 +327,8 @@ function resetearpantalla2(){
     pulsblanco.style.cssText = blancoapagado2;
     pulsazul.style.cssText = azulapagado2;
     
-    salida.innerHTML = 'NIVEL 2' ;
-    puntos.innerHTML ='Puntos: ' + puntuaje;
+    salida.innerHTML = 'NIVEL ' + nivel ;
+    
 }
 function colorsecuencia2(){
     var frutas = ['verde','rojo','amarillo','naranja','blanco','azul'];
@@ -464,6 +465,7 @@ function apagarpulsador2(pulsador){
         swal("Perfecto veo que se te da bien , ten cuidado ahora seran 8 frutas y con mas velocidad");
         empezar.style.cssText ='display: block;';
         puntuaje += 200;
+        puntos.innerHTML ='Puntos: ' + puntuaje;
         pantalla.removeEventListener('click',comprueba2);
 
     }

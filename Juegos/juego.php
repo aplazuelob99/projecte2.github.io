@@ -13,6 +13,9 @@
         <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/cssjuego.css" type="text/css">
         <link href="../assets/css/style.css" rel="stylesheet">
+
+        <title>Macedonia</title>
+      <link rel="icon" type="image/png" href="img/piña.png"/>
     </head>
 <body>
 <!-- ======= Header ======= -->
@@ -20,16 +23,20 @@
     <div class="container">
       <div class="header-container d-flex align-items-center">
         <div class="logo mr-auto">
-          <h1 class="text-light"><a href="index.html"><span>Mercat Barcelona</span></a></h1>
+          <h1 class="text-light"><a href="../index.php"><span>Mercat Barcelona</span></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li><a href="recogercarne.php">Carniceria</a></li>
-            <li><a href="cesta.php">Panaderia</a></li>
-            <li><a href="rompecabezas.php">Pescaderia</a></li>
+            <li class="drop-down"><a href="../juegos.php">Juegos</a>
+              <ul>
+                <li><a href="recogercarne.php">Carniceria</a></li>
+                <li><a href="cesta.php">Panaderia</a></li>
+                <li><a href="rompecabezas.php">Pescaderia</a></li>
+              </ul>
+            </li>
             <li><a href="../index.php #ofertas">Ofertas</a></li>
             <li class="active"><a href="../index.php">Salir</a></li>
           </ul>
@@ -41,7 +48,8 @@
     
 <div class="contenedor" style="margin-top: 0%">
 <div id="capanieve"></div>
-<h1 id="salida">MACEDONIA</h1>
+  <h1 id="salida">MACEDONIA</h1>
+
     <h2 id="puntos" >Puntos:</h2>
     
     <div class="pantalla" id="pantalla" style="left: 27%; top: 15%">

@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
         <!-- Vendor CSS Files -->
-        <link href="assets/css/juegos.css" rel="stylesheet">
+        
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
         <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -24,6 +24,7 @@
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/juegos.css" rel="stylesheet">
     
     </head>
 
@@ -38,7 +39,7 @@
 
                     <div class="logo mr-auto">
 
-                        <h1 class="text-light"><a href="index.html"><span>Mercado Barcelona</span></a></h1>
+                        <h1 class="text-light"><a href="index.php"><span>Mercado Barcelona</span></a></h1>
 
                     </div>
 
@@ -52,7 +53,7 @@
 
                             <li><a href="index.php #tiendas">Tiendas</a></li>
                     
-                            <li class="drop-down"><a href="Juegos/juego.php">Juegos</a>
+                            <li class="drop-down"><a href="juegos.php">Juegos</a>
 
                                 <ul>
 
@@ -82,7 +83,7 @@
 
         </header><!-- End Header -->
 
-        <section id="tiendas" class="team" style="margin-top: 3%;">
+        <section id="juegos" class="team" style="margin-top: 3%;">
 
             <div class="container">
 

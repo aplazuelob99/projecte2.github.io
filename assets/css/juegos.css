@@ -1,15 +1,4 @@
-#tiendas{
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondojuegos.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-body{
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondojuegos.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+#juegos{
+    background: rgb(117, 131, 255);
+    background: linear-gradient(0deg, rgba(117, 131, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }

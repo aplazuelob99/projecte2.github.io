@@ -29,13 +29,21 @@
       <div class="container">
         <div class="header-container d-flex align-items-center">
           <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Mercat Barcelona</span></a></h1>
+            <h1 class="text-light"><a href="../index.php"><span>Mercat Barcelona</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           </div>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
+              <li class="drop-down"><a href="../juegos.php">Juegos</a>
+                <ul>
+                  <li><a href="juego.php">Fruteria</a></li>
+                  <li><a href="recogercarne.php">Carniceria</a></li>
+                  <li><a href="cesta.php">Panaderia</a></li>
+                </ul>
+              </li>
+              <li><a href="../index.php #ofertas">Ofertas</a></li>
               <li class="active"><a href="../index.php">Salir</a></li>
                           
               <!-- <li class="get-started"><a href="#about">Iniciar session</a></li>
@@ -63,7 +71,7 @@
               <a href="../index.php"><img src="Imagenes_puzzle/home.png" height="30" width="45" alt="Botón"></a>
             </div> 
 
-            <button onclick="finalizado()">Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
+            <button onclick=finalizado()>Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
 
             <p id="demo" style="color: white;"></p>
 
