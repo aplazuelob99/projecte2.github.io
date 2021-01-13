@@ -218,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #columsess{
+  left: -50px;
   width: 300px;
   background: #7583ff; 
   border-radius: 25px;
