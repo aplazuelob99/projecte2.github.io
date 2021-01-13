@@ -222,10 +222,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
   background: #7583ff; 
   border-radius: 25px;
-  border-top: 1px solid #B6B6B6;
-  border-bottom: 1px solid#B6B6B6;
-  border-left: 1px solid#B6B6B6;
-  border-right: 1px solid #B6B6B6;
+  border-top: 1px solid #001bff;
+  border-bottom: 1px solid#001bff;
+  border-left: 1px solid#001bff;
+  border-right: 1px solid #001bff;
 }
 
 #botonsess{
@@ -242,10 +242,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   margin: 0 5px;
   padding: 10px 25px;
-  border-top: 2px solid #001bff;
-  border-bottom: 2px solid #001bff;
-  border-left: 2px solid #001bff;
-  border-right: 2px solid #001bff;
+  border-top: 1px solid #001bff;
+  border-bottom: 1px solid #001bff;
+  border-left: 1px solid #001bff;
+  border-right: 1px solid #001bff;
   float: right;
 }
 

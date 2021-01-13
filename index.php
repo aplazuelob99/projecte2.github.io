@@ -102,13 +102,13 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= titulo ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
       <h1>Bienvenidos a la pagina de ofertas del mercado</h1>
       <h2>En esta pagina podras obtener descuentos para los pequeños comercios de Barcelona.</h2>
     </div>
-  </section><!-- End Hero -->
+  </section><!-- End titulo -->
 
   <main id="main">
 
