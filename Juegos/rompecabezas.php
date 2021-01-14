@@ -67,34 +67,42 @@
               </p>
             </div>
             
-            <div id="botonfondo" class="container">
-              <a href="../index.php"><img src="Imagenes_puzzle/home.png" height="30" width="45" alt="Botón"></a>
-            </div> 
+         
 
             <button onclick=finalizado()>Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
 
             <p id="demo" style="color: white;"></p>
 
           </div>
+        <br><br><br><br>
+          <center>
+            <h3>Rompecabezas</h3>
+
+        <div id="puzzle">
+            <table>
+			        <tr>
+				        <td><img id="img_0" src="Imagenes_puzzle/img_0.png" onclick="seleccionar(0)" /></td>
+				        <td><img id="img_1" src="Imagenes_puzzle/img_1.png" onclick="seleccionar(1)" /></td>
+				        <td><img id="img_2" src="Imagenes_puzzle/img_2.png" onclick="seleccionar(2)" /></td>
+			        </tr>
+			        <tr>
+				        <td><img id="img_3" src="Imagenes_puzzle/img_3.png" onclick="seleccionar(3)" /></td>
+				        <td><img id="img_4" src="Imagenes_puzzle/img_4.png" onclick="seleccionar(4)" /></td>
+				        <td><img id="img_5" src="Imagenes_puzzle/img_5.png" onclick="seleccionar(5)" /></td>
+			        </tr>
+		      	  <tr>
+				        <td><img id="img_6" src="Imagenes_puzzle/img_6.png" onclick="seleccionar(6)" /></td>
+				        <td><img id="img_7" src="Imagenes_puzzle/img_7.png" onclick="seleccionar(7)" /></td>
+				        <td><img id="img_8" src="Imagenes_puzzle/img_8.png" onclick="seleccionar(8)" /></td>
+			        </tr>
+            </table>
+        </div>
+        </center>
+
+      
+          
+
         
-
-      
-          <svg width="600" height="600" id="entorno">
-            <g id="fondo"><image xlink:href="Imagenes_puzzle/fondo.jpg" width="400" height="400" x="180" y="60"></g>
-          <g class="padre" id="0"><image xlink:href="Imagenes_puzzle/pieza01.png" class="movil"></g>
-          <g class="padre" id="1"><image xlink:href="Imagenes_puzzle/pieza02.png" class="movil"></g>
-          <g class="padre" id="2"><image xlink:href="Imagenes_puzzle/pieza03.png" class="movil"></g>
-          <g class="padre" id="3"><image xlink:href="Imagenes_puzzle/pieza04.png" class="movil"></g>
-          <g class="padre" id="4"><image xlink:href="Imagenes_puzzle/pieza05.png" class="movil"></g>
-          <g class="padre" id="5"><image xlink:href="Imagenes_puzzle/pieza06.png" class="movil"></g>
-          <g class="padre" id="6"><image xlink:href="Imagenes_puzzle/pieza07.png" class="movil"></g>
-          <g class="padre" id="7"><image xlink:href="Imagenes_puzzle/pieza08.png" class="movil"></g>
-          <g class="padre" id="8"><image xlink:href="Imagenes_puzzle/pieza09.png" class="movil"></g>
-        </svg>
-
-      
-
-        <div class="ganador">
           
         </div>
 
@@ -104,13 +112,16 @@
         
        
 
-        <audio id="win" src="media/victoria.mp3"></audio>
+      
           
         <script type="text/javascript" src="script_rompecabezas.js"></script>
 
 
 
 </body>
+<script type="text/javascript">
+
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
