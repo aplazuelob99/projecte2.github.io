@@ -75,7 +75,7 @@ function seleccionar(casilla) {
 		if (correcto == true) {
 			//Mostramos el alert mediante un breve temporizador, para que de tiempo a refrescar el puzzle y verlo completo:
 			setTimeout(function(){
-			 	alert("Has completado el puzzle correctamente,el juego a terminado,reinicia la pagina para volver a juegar");
+			 	alert("Has completado el puzzle correctamente,el juego a terminado,reinicia la pagina para volver a jugar");
 			}, 300);
 		}
 	}
