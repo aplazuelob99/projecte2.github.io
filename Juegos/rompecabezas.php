@@ -62,8 +62,8 @@
             <h2><span id="countdown"></span></h2>
              <a href="#">puntuación</a>
             <div class="parrafo">
-              <p>completa el puzzle para pasar al 
-                  siguiente nivel.
+              <p>Para completar el puzzle debes clicar una pieza del puzzle y otra pieza para intercambiarlas de lugar y asi
+              completar el puzzle o rompecabezas
               </p>
             </div>
             
