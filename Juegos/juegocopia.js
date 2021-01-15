@@ -158,6 +158,8 @@ var pulsverde = document.querySelector('#verde'),
         pulsazul.style.cssText = azulapagado;
         
         salida.innerHTML = 'NIVEL ' + nivel;
+        nivel.style.cssText = "font-family: 'Poppins', sans-serif";
+        puntuaje.style.cssText = "font-family: 'Poppins', sans-serif";
         puntos.innerHTML ='Puntos: ' + puntuaje;
 
     }
@@ -465,6 +467,7 @@ function apagarpulsador2(pulsador){
         swal("Perfecto veo que se te da bien , ten cuidado ahora seran 8 frutas y con mas velocidad");
         empezar.style.cssText ='display: block;';
         puntuaje += 200;
+        
         puntos.innerHTML ='Puntos: ' + puntuaje;
         pantalla.removeEventListener('click',comprueba2);
 

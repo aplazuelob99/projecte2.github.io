@@ -70,7 +70,7 @@
         <button type="button" id="empezar" class="border 1px">Empezar</button>
         <button type="button" id="siguiente" class="border 1px"></button>
         <div id="nivel"><strong>Nivel</strong></div>
-        <div id="controles"><strong>Controles</strong><br><img src="img/controles.png" width="150px" height="100px"></div>
+        <div id="controles" class="border 3px"><strong>Controles</strong><br><img src="img/controles.png" width="150px" height="100px"></div>
 
     </div>
     
