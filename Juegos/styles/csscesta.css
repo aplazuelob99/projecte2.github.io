@@ -72,6 +72,7 @@ body{
     top: 0px;
     color:black;   
     text-align: center;
+    border-color: goldenrod !important;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* border-color: rgb(218, 32, 119) !important; */
 }
@@ -86,6 +87,7 @@ body{
     position: absolute;
     color: black;   
     text-align: center;
+    border-color: goldenrod !important;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /* border-color: rgb(32, 91, 218) !important; */
 }
