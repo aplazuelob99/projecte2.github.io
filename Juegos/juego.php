@@ -1,8 +1,7 @@
 <html>
     <head>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -48,9 +47,9 @@
     
 <div class="contenedor" style="margin-top: 0%">
 <div id="capanieve"></div>
-  <h1 id="salida">MACEDONIA</h1>
+  <h1 id="salida" class="border 1px">MACEDONIA</h1>
 
-    <h2 id="puntos" >Puntos:</h2>
+    <h2 id="puntos" class="border 1px">Puntos</h2>
     
     <div class="pantalla" id="pantalla" style="left: 27%; top: 15%">
         <div class="fruta" id="rojo" data-izquierda="false"></div>

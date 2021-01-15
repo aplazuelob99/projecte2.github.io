@@ -25,12 +25,11 @@
     top: 15%;
     position : absolute;
     left : 9%;
-    border-color: black !important;
+    border-color: goldenrod !important;
     background-color: gold;
-    border-radius: 10%;
-    border: 1px 1px;
-    /* width: 80px;
-    height: 110px; */
+    border-radius: 5px;
+    border: 1px;
+    padding:5px;
 
 }
 
@@ -38,10 +37,11 @@
     top: 25%;
     position: absolute;
     left : 9%;
-    border-color: black !important;
+    border-color: goldenrod !important;
     background-color: gold;
-    border-radius: 10%;
-    border: 1px 1px;
+    border-radius: 5px;
+    border: 1px;
+    padding:5px;
 }
 
 .contenedor {
