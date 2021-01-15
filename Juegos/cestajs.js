@@ -301,7 +301,7 @@ window.onload = function(){
             siguiente.addEventListener ("click", function(){ //funcion para pasar a siguiente juego 
                 juego = false;
                 siguiente.style.visibility = "hidden";
-                window.location.href = "rompecabezas.php";
+                window.location.href = "puzzle.php";
         
             })
 }

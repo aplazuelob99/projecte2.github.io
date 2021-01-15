@@ -86,8 +86,7 @@ var pulsverde = document.querySelector('#verde'),
         }, 15);  
       }
    //cuenta atras para todos los niveles
-    function cuentaatras() { 
-        console.log(nivel);
+    function cuentaatras() {  
         if(nivel == 1){
         empezar.style.cssText ='display: none;';
         cuenta.style.cssText ="display: block";
@@ -158,8 +157,6 @@ var pulsverde = document.querySelector('#verde'),
         pulsazul.style.cssText = azulapagado;
         
         salida.innerHTML = 'NIVEL ' + nivel;
-        nivel.style.cssText = "font-family: 'Poppins', sans-serif";
-        puntuaje.style.cssText = "font-family: 'Poppins', sans-serif";
         puntos.innerHTML ='Puntos: ' + puntuaje;
 
     }
