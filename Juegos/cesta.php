@@ -65,7 +65,7 @@
       <div id="producto2" class="productos"> </div>
       <div id="producto3" class="productos"> </div>
       <div id="contador" class="border 1px"></div>
-      <div id="puntuacion"></div>
+      <div id="puntuacion" class="border 1px"></div>
       <button type="button" id="empezar" class="border 1px">GO!!</button>
       <button type="button" id="siguiente" class="border 2px"></button>
 
