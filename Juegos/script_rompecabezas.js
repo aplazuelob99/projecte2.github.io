@@ -5,7 +5,7 @@
 window.onload = updateClock;
 var totalTime = 60;
 function updateClock() {
-document.getElementById('countdown').innerHTML = totalTime;
+document.getElementById('contador').innerHTML = "<p> Tiempo <br>" + totalTime + "</p>" ;
 if(totalTime==0){
 alert('Se acabo el tiempo,reinicia la pagina para volver a jugar');
 }else{

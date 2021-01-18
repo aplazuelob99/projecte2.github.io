@@ -9,7 +9,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 100px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -22,9 +22,16 @@ body {
 .cuentaregresiva{
   color: white;
 }
-#countdown{
-  color: white;
-  right: 60px;
+#contador{
+  left: 900px;
+    background-color: gold;
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    top: 0px;
+    color: black;   
+    text-align: center;
+    border-color: goldenrod !important;
 }
 
 .parrafo{

@@ -58,9 +58,9 @@
     
           <div class="sidenav">
             <br><br>
-            <h4> <div class="cuentaregresiva"> Cuenta Regresiva</div></h4>
-            <h2><span id="countdown"></span></h2>
-             <a href="#">puntuación</a>
+            
+            
+             
             <div class="parrafo">
               <p>Para completar el puzzle debes clicar una pieza del puzzle y otra pieza para intercambiarlas de lugar y asi
               completar el puzzle o rompecabezas
@@ -69,7 +69,7 @@
             
          
 
-            <button onclick=finalizado()>Pulsa el boton solamente cuando hayas finalizado el puzzle</button>
+           
 
             <p id="demo" style="color: white;"></p>
 
@@ -80,6 +80,10 @@
 
         <div id="puzzle">
             <table>
+            <tr>
+              <td>
+              <div id="contador" class="border 1px" style="background: gold; left: 992px; top:142px; position:absolute; width: 60px; height:50px;  text-align: center; border-color: goldenrod !important;"></div>
+              </td>
 			        <tr>
 				        <td><img id="img_0" src="Imagenes_puzzle/img_0.png" onclick="seleccionar(0)" /></td>
 				        <td><img id="img_1" src="Imagenes_puzzle/img_1.png" onclick="seleccionar(1)" /></td>
