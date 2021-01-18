@@ -34,58 +34,11 @@ session_start();
 
     <body>
 
-        <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top d-flex align-items-center">
-
-            <div class="container">
-
-                <div class="header-container d-flex align-items-center">
-
-                    <div class="logo mr-auto">
-
-                        <h1 class="text-light"><a href="index.php"><span>Mercado Barcelona</span></a></h1>
-
-                    </div>
-
-                    <nav class="nav-menu d-none d-lg-block">
-
-                        <ul>
-
-                            <li class="active"><a href="index.php">Home</a></li>
-
-                            <li><a href="index.php #ofertas">Ofertas</a></li>
-
-                            <li><a href="index.php #tiendas">Tiendas</a></li>
-                    
-                            <li class="drop-down"><a href="juegos.php">Juegos</a>
-
-                                <ul>
-
-                                    <li><a href="Juegos/juego.php">Fruteria</a></li>
-
-                                    <li><a href="Juegos/recogercarne.php">Carniceria</a></li>
-
-                                    <li><a href="Juegos/cesta.php">Panaderia</a></li>
-
-                                    <li><a href="Juegos/rompecabezas.php">Pescaderia</a></li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="get-started"><a href="#about">Iniciar session</a></li>
-
-                            <li class="get-started"><a href="#about">Registrarse</a></li>
-
-                        </ul>
-
-                    </nav><!-- .nav-menu -->
-
-                </div><!-- End Header Container -->
-
-            </div>
-
-        </header><!-- End Header -->
+       <?php 
+       
+        include_once("navbar.php");
+       
+       ?>
 
         <section id="juegos" class="team" style="margin-top: 3%;">
 

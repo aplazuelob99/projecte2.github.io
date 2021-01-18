@@ -1,5 +1,13 @@
 <?php 
 session_start();
+
+require_once("php_library/bd.php");
+
+if(isset($_SESSION['Id_user'])){
+
+  $usuarios = iniciarsess($_SESSION['Id_user']);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -31,81 +39,12 @@ session_start();
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container">
-      <div class="header-container d-flex align-items-center">
-        <div class="logo mr-auto">
-          <h1 class="text-light"><a href="index.php"><span>Mercado Barcelona</span></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
+  <?php 
 
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#tiendas">Tiendas</a></li>
-            
-            <li class="drop-down"><a href="juegos.php">Juegos</a>
-                      <ul>
-                        <li><a href="Juegos/juego.php">Fruteria</a></li>
-                        <li><a href="Juegos/recogercarne.php">Carniceria</a></li>
-                        <li><a href="Juegos/cesta.php">Panaderia</a></li>
-                        <li><a href="Juegos/rompecabezas.php">Pescaderia</a></li>
-                      </ul>
-            </li>
-            
-              <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label">Iniciar sesión</label>
+    include_once("navbar.php");
 
-                <ul id="columsess">
-
-                  <h5 id="titulosess">Entra en tu perfil</h5>
-
-                  <form action="" method="POST" enctype="multipart/form-data">
-
-                    <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
-
-                    <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>
-
-                    <button type="submit" id="botonsess" name="añadir">Entrar</button>
-
-                  </form>
-
-                </ul>
-
-              </li>
-
-              <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label">Registrarse</label>
-
-                <ul id="columsess">
-
-                  <h5 id="titulosess">Create una cuenta</h5>
-
-                  <form action="" method="POST" enctype="multipart/form-data">
-
-                    <li id="iniciarsess"><input class="form-control" type="text" name="nombre" placeholder="Nombre"></li>
-
-                    <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico" required></li>
-
-                    <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña" required></li>
-
-                    <li id="iniciarsess"><input class="form-control" type="password" name="password2" placeholder="Repite contraseña" required></li>
-
-                    <button type="submit" id="botonsess" name="añadir">Crear cuenta</button>
-
-                  </form>
-
-                </ul>
-
-              </li>
-              
-          </ul>
-        </nav><!-- .nav-menu -->
-      </div><!-- End Header Container -->
-    </div>
-  </header><!-- End Header -->
-
+  ?>
+  
   <!-- ======= titulo ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
@@ -381,5 +320,10 @@ session_start();
 
 </body>
 
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
 </html>

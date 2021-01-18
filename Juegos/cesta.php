@@ -31,34 +31,11 @@ session_start();
 </head>
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container">
-        <div class="header-container d-flex align-items-center">
-          <div class="logo mr-auto">
-            <h1 class="text-light"><a href="../index.php"><span>Mercat Barcelona</span></a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-          </div>
+    <?php
 
-          <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li class="drop-down"><a href="../juegos.php">Juegos</a>
-                <ul>
-                  <li><a href="juego.php">Fruteria</a></li>
-                  <li><a href="recogercarne.php">Carniceria</a></li>
-                  <li><a href="rompecabezas.php">Pescaderia</a></li>
-                </ul>
-              </li>
-              <li><a href="../index.php #ofertas">Ofertas</a></li>
-              <li class="active"><a href="../index.php">Salir</a></li>
-             
-            </ul>
-          </nav><!-- .nav-menu -->
-        </div><!-- End Header Container -->
-      </div>
-    </header><!-- End Header -->
-    
+      include_once("../navbar.php");
+
+    ?>
 
 
   
