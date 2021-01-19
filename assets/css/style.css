@@ -227,6 +227,56 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #001bff;
 }
 
+#botoncrear{
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.3s;
+  background: #7583ff;
+  border-radius: 50px;
+  margin: 0 5px;
+  padding: 10px 25px;
+  border-top: 1px solid #001bff;
+  border-bottom: 1px solid #001bff;
+  border-left: 1px solid #001bff;
+  border-right: 1px solid #001bff;
+  float: right;
+}
+
+#botoncrear:hover{
+  background: #001bff;
+  border-top: 2px solid #7583ff;
+  border-bottom: 2px solid #7583ff;
+  border-left: 2px solid #7583ff;
+  border-right: 2px solid #7583ff;
+}
+
+#sesion{
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.3s;
+  background: #7583ff;
+  border-radius: 50px;
+  margin: 0 5px;
+  padding: 10px 25px;
+  border-top: 1px solid #001bff;
+  border-bottom: 1px solid #001bff;
+  border-left: 1px solid #001bff;
+  border-right: 1px solid #001bff;
+  float: right;
+}
+
 #botonsess{
   font-size: 13px;
   font-weight: 500;

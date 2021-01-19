@@ -1,10 +1,12 @@
 <?php 
 
+
+
 function abrirBD(){
 
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "mysql";
 
     $conexion = new PDO("mysql:host=$servername;dbname=bd-proyecto", $username, $password);
 
@@ -45,7 +47,7 @@ function iniciarsess($id){
      $sentenciainciar = "Select * from usuari where Id = :id";
 
     $sentencia = $conexion->prepare($sentenciainciar);
-    $sentencia->bindParam(':Id', $id);
+    $sentencia->bindParam(':id', $id);
     $sentencia->execute();
 
     $result = $sentencia->fetchAll();

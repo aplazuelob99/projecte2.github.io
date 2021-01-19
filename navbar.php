@@ -1,3 +1,17 @@
+<?php 
+session_start();
+
+
+
+require_once("php_library/bd.php");
+
+if(isset($_SESSION['Id_user'])){
+
+  $usuarios = iniciarsess($_SESSION['Id_user']);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,25 +42,18 @@
         <div class="container">
         <div class="header-container d-flex align-items-center">
             <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.php"><span>Mercado Barcelona</span></a></h1>
+            <h1 class="text-light"><a href="/projecte2.github.io/index.php"><span>Mercado Barcelona</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="#header">Home</a></li>
-                    <li><a href="/projecte2/index.php #ofertas">Ofertas</a></li>
-                    <li><a href="/projecte2/index.php #tiendas">Tiendas</a></li>
+                    <li class="active"><a href="/projecte2.github.io/index.php #hero">Home</a></li>
+                    <li><a href="/projecte2.github.io/index.php #ofertas">Ofertas</a></li>
+                    <li><a href="/projecte2.github.io/index.php #tiendas">Tiendas</a></li>
                 
-                    <li class="drop-down"><a href="/projecte2/juegos.php">Juegos</a>
-                            <ul>
-                                <li><a href="/projecte2/Juegos/juego.php">Fruteria</a></li>
-                                <li><a href="/projecte2/Juegos/recogercarne.php">Carniceria</a></li>
-                                <li><a href="/projecte2/Juegos/cesta.php">Panaderia</a></li>
-                                <li><a href="/projecte2/Juegos/rompecabezas.php">Pescaderia</a></li>
-                            </ul>
-                    </li>
+                    
 
 
 
@@ -55,59 +62,32 @@
 
                         foreach($usuarios as $usuario){ ?>
 
-                        <li class="drop-down" value="<?php echo $usuario['Email'] ?>">
+                            <li class="drop-down"><a href="/projecte2.github.io/juegos.php">Juegos</a>
+                                <ul>
+                                    <li><a href="/projecte2.github.io/Juegos/juego.php">Fruteria</a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/recogercarne.php">Carniceria</a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/cesta.php">Panaderia</a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/rompecabezas.php">Pescaderia</a></li>
+                                </ul>
+                            </li>
 
-                            <ul>
-                                <li value="<?php echo "Puntos: " . $usuario['Puntos']  ?>"></li>
-                                <li><box-icon name='log-out'>Cerrar sesión</box-icon></li>
-                            
+                        <li class="drop-down"><i class="bx bx-user-circle bx-md" style="margin-right: 5px;"></i>
+                            <ul style="margin-left : -50px; border-radius: 8px">
+
+                                <form action="php_library/bd_controller.php" method="POST">
+                                    
+                                    <li style="margin: 5px;"><?php echo $usuario['Email'] ?></li>
+                                    <li style="margin: 5px;"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
+                                    <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white"><i class="bx bx-power-off bx-sm" ></i></button></li>
+
+                                </form>
                             </ul>
 
                         </li> 
 
-                    <?php } ?>
+                    <?php } 
 
-                    <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label">Iniciar sesión</label>
-
-                        <ul id="columsess">
-
-                            <h5 id="titulosess">Entra en tu perfil</h5>
-
-                            <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
-
-                                <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
-
-                                <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>
-
-                                <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>
-
-                            </form>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label">Registrarse</label>
-
-                        <ul id="columsess">
-
-                            <h5 id="titulosess">Create una cuenta</h5>
-
-                            <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
-
-                                <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico" required></li>
-
-                                <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña" required></li>
-
-                                <button type="submit" id="botonsess" name="botoncrear">Crear cuenta</button>
-
-                            </form>
-
-                        </ul>
-
-                    </li>
-
-                        <?php } else{ ?>
+                        } else{ ?>
 
                             <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label">Iniciar sesión</label>
 
@@ -119,9 +99,7 @@
 
                                         <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
 
-                                        <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>
-
-                                        <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>
+                                        <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>                                      
 
                                     </form>
 

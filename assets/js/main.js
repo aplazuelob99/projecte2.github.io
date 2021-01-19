@@ -56,7 +56,7 @@
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
       if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first, .mobile-menu ul:first li:first").addClass('active');
+        $(".nav-menu ul:first li:first").addClass('active');
       }
     });
   });
@@ -94,13 +94,11 @@
   function aos_init() {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out",
       once: true,
-      mirror: false
     });
   }
   $(window).on('load', function() {
     aos_init();
-  });
+  })
 
 })(jQuery);

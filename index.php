@@ -1,15 +1,3 @@
-<?php 
-session_start();
-
-require_once("php_library/bd.php");
-
-if(isset($_SESSION['Id_user'])){
-
-  $usuarios = iniciarsess($_SESSION['Id_user']);
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,8 +36,8 @@ if(isset($_SESSION['Id_user'])){
   <!-- ======= titulo ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-      <h1>Bienvenidos a la pagina de ofertas del mercado</h1>
-      <h2>En esta pagina podras obtener descuentos para los pequeños comercios de Barcelona.</h2>
+      <h1>Bienvenidos a la página de ofertas del mercado</h1>
+      <h2>En esta página podrás obtener descuentos para los pequeños comercios de Barcelona.</h2>
     </div>
   </section><!-- End titulo -->
 
@@ -83,10 +71,10 @@ if(isset($_SESSION['Id_user'])){
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
 
 
-    <!-- ======= Why Us Section ======= -->
+    <!-- ======= Ofertas especiales ======= -->
     <section id="why-us" class="why-us">
       <div class="container">
 
@@ -137,7 +125,7 @@ if(isset($_SESSION['Id_user'])){
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
 
     <!-- ======= Ofertas ======= -->
     <section id="ofertas" class="services section-bg">
