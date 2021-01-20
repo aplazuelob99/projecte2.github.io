@@ -76,11 +76,11 @@ if(isset($_SESSION['Id_user'])){
 
                                 <form action="php_library/bd_controller.php" method="POST">
                                     
-                                    <li style="margin: 5px;" id="infouser"><?php echo $usuario['Email'] ?></li>
-                                    <li style="margin: 5px;" id="infouser"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white; margin-top:10px"><i class="bx bx-power-off bx-sm" style="color: #7583ff;" ></i></button></li>
-
+                                        <li style="margin: 5px;" id="infouser"><?php echo $usuario['Email'] ?></li>
+                                        <li style="margin: 5px;" id="infouser"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white; margin-top:10px"><i class="bx bx-power-off bx-sm" style="color: #7583ff;" ></i></button></li>
+                                
                                 </form>
                             </ul>
 
@@ -98,12 +98,15 @@ if(isset($_SESSION['Id_user'])){
 
                                     <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
 
-                                        <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
+                                            
+                                            <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
 
-                                        <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>  
+                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>  
 
-                                        <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>                                    
+                                            <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>  
 
+
+                                      
                                     </form>
 
                                 </ul>
@@ -138,6 +141,13 @@ if(isset($_SESSION['Id_user'])){
         </div>
     </header><!-- End Header -->
     
+    <?php if(isset($_SESSION['error']) == true){ ?>
+
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div>
+
+    <?php } ?>
 
     <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

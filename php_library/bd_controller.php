@@ -16,7 +16,7 @@ if(isset($_POST['botoncrear'])){
 if(isset($_POST['iniciarsess'])){
 
     $usuarios = selectuser();
-    $_SESSION['error'] = false;
+    $_SESSION['error'] = true;
 
     foreach($usuarios as $usuario){
 
@@ -33,6 +33,14 @@ if(isset($_POST['iniciarsess'])){
         }
     }
     
+}
+
+if(isset($_SESSION['error']) == true){
+    session_destroy();
+    
+    header('Location: ../index.php');
+    exit();
+
 }
 
 
