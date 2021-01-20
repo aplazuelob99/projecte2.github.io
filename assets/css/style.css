@@ -326,6 +326,12 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 2px solid #001bff;
 }
 
+#infouser{
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
 #botones_sesion:hover{
   border-top: 2px solid #B6B6B6;
   border-bottom: 2px solid#B6B6B6;

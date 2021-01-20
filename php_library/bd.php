@@ -6,7 +6,7 @@ function abrirBD(){
 
     $servername = "localhost";
     $username = "root";
-    $password = "mysql";
+    $password = "";
 
     $conexion = new PDO("mysql:host=$servername;dbname=bd-proyecto", $username, $password);
 
