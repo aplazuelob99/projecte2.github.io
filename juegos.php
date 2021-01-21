@@ -1,10 +1,24 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "juegos.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+    $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+    $contentJson = file_get_contents($contentFile);
+    $content = json_decode($contentJson, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Mercado de Barcelona</title>
+        <title><?php echo $content["juegosmain"]["pagetitle"]; ?></title>
         
         <!-- Favicons -->
         <link rel="icon" type="image/png" href="assets/img/logo.png"/>
@@ -46,9 +60,9 @@
 
                         <div class="section-title" data-aos="fade-right">
 
-                            <h2>Juegos</h2>
+                            <h2><?php echo $content["juegosmain"]["titleh2"]; ?></h2>
 
-                            <p>Aqui encontraras una variedad de los videojuegos diseñado por nosotros en los que podrás conseguir puntos!</p>
+                            <p><?php echo $content["juegosmain"]["titlep"]; ?></p>
 
                         </div>
 
@@ -68,9 +82,9 @@
 
                                         <div class="tienda-info">
 
-                                            <h4>Macedonia</h4>
+                                            <h4><?php echo $content["juegosmain"]["juego1h4"]; ?></h4>
 
-                                            <strong>Instrucciones: </strong>en este juego deberás memorizar la secuencia de frutas de la macedonia para poder avanzar en los niveles y conseguir puntos
+                                            <?php echo $content["juegosmain"]["juego1instrucciones"]; ?>
 
                                         </div>
 
@@ -92,10 +106,8 @@
 
                                         <div class="tienda-info">
 
-                                            <h4>Recoge la carne</h4>
-
-                                            <strong>Instrucciones: </strong>este juego trata de ayudar a un señor mayor a completar su compra de la semana 
-                                            guardando la distancia de seguridad con la gente que está comprando en la tienda
+                                        <h4><?php echo $content["juegosmain"]["juego2h4"]; ?></h4>
+                                        <?php echo $content["juegosmain"]["juego2instrucciones"]; ?>
 
                                         </div>
 
@@ -117,9 +129,8 @@
 
                                         <div class="tienda-info">
 
-                                            <h4>Panadería</h4>
-
-                                            <strong>Instrucciones: </strong>en este juego deberás recoger la comida que va cayendo por la parte superior de la pantalla para conseguir puntos
+                                        <h4><?php echo $content["juegosmain"]["juego3h4"]; ?></h4>
+                                        <?php echo $content["juegosmain"]["juego3instrucciones"]; ?>
 
                                         </div>
 
@@ -144,9 +155,8 @@
                 
                                         <div class="tienda-info">
 
-                                            <h4>Pescadería</h4>
-
-                                            <strong>Instrucciones: </strong> intenta realizar este puzzle antes de que termine el tiempo para poder conseguir más puntos.
+                                        <h4><?php echo $content["juegosmain"]["juego4h4"]; ?></h4>
+                                        <?php echo $content["juegosmain"]["juego4instrucciones"]; ?>
    
                                         </div>
 
@@ -181,7 +191,7 @@
 
             <div class="mr-md-auto text-center text-md-left">
                 <div class="copyright">
-                    Diseñado por alumnos del <a href="https://politecnics.barcelona">Politecnics</a>
+                <?php echo $content["juegosmain"]["alumnos"]; ?>
                 </div>
             </div>
 
