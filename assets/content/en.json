@@ -101,6 +101,9 @@
         "gamestart": "Start"
     },
     "juego4": {
-        "gametitle": "Fish shop"
+        "gametitle": "Fish shop",
+        "gamep": "To complete the puzzle you must click a piece of the puzzle and another piece to exchange places and thus complete the puzzle",
+        "gameh3": "Puzzle",
+        "gamemenu": "Games Menu"
     }
 }

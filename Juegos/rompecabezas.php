@@ -1,3 +1,17 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "rompecabezas.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+  $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+  $contentJson = file_get_contents($contentFile);
+  $content = json_decode($contentJson, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +31,7 @@
     <link href="../assets/css/style.css" rel="stylesheet">
     <script src="script_rompecabezas.js" language="javascript" type="text/javascript"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Rompecabezas</title>
+    <title><?php echo $content["juego4"]["gametitle"]; ?></title>
     <link rel="icon" type="image/png" href="imagenes_puzzle/puzzle.png"/>
 
 </head>
@@ -37,9 +51,7 @@
             
              
             <div class="parrafo">
-              <p>Para completar el puzzle debes clicar una pieza del puzzle y otra pieza para intercambiarlas de lugar y asi
-              completar el puzzle o rompecabezas
-              </p>
+              <p><?php echo $content["juego4"]["gamep"]; ?></p>
             </div>
             
          
@@ -51,7 +63,7 @@
           </div>
         <br><br><br><br>
           <center>
-            <h3>Rompecabezas</h3>
+            <h3><?php echo $content["juego4"]["gameh3"]; ?></h3>
 
         <div id="puzzle">
             <table>
@@ -87,7 +99,7 @@
 
         <br>
         
-        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="../juegos.php"  style="text-decoration:none"> Menu de Juegos</a></button>
+        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="../juegos.php"  style="text-decoration:none"><?php echo $content["juego4"]["gamemenu"]; ?></a></button>
         
        
 

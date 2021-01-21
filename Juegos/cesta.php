@@ -1,3 +1,17 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "cesta.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+  $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+  $contentJson = file_get_contents($contentFile);
+  $content = json_decode($contentJson, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

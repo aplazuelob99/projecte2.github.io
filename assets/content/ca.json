@@ -100,6 +100,9 @@
         "gamestart": "Començar"
     },
     "juego4": {
-        "gametitle": "Peixateria"
+        "gametitle": "Peixateria",
+        "gamep": "Per completar el trencaclosques has de fer clic a una peça del puzzle i a una altra peça per intercanviar de lloc i així completar el trencaclosques",
+        "gameh3": "Trencaclosques",
+        "gamemenu": "Menu de Jocs"
     }
 }

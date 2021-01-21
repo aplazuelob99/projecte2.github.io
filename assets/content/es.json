@@ -99,6 +99,9 @@
         "gamestart": "Empezar"
     },
     "juego4": {
-        "gametitle": "Pescadería"
+        "gametitle": "Pescadería",
+        "gamep": "Para completar el puzzle debes clicar una pieza del puzzle y otra pieza para intercambiarlas de lugar y asi completar el puzzle",
+        "gameh3": "Rompecabezas",
+        "gamemenu": "Menu de Juegos"
     }
 }
