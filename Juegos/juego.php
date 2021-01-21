@@ -32,7 +32,7 @@
 
     <h2 id="puntos" class="border 1px">Puntos</h2>
     
-    <div class="pantalla" id="pantalla" style="left: 27%; top: 15%">
+    <div class="pantalla" id="pantalla" style="left: 30%; top: 20%">
         <div class="fruta" id="rojo" data-izquierda="false"></div>
         <div class="fruta" id="amarillo" data-izquierda="true"></div>
         <div class="fruta med" id="naranja" data-izquierda="true"></div>

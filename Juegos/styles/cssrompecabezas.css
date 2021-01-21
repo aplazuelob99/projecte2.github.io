@@ -75,10 +75,10 @@ img {
   background-position: center;
   border-color: rgb(0, 0, 0) !important;
   position: absolute;
-  right: 700px;
+  right: 680px;
   height: 80px;
   width: 80px;
-  bottom: 140px;
+  bottom: 50px;
   border-radius: 30px 30px;
   color: white;
 }

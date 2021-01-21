@@ -75,7 +75,7 @@
 
 
     <!-- ======= Ofertas especiales ======= -->
-    <section id="why-us" class="why-us">
+    <section id="why-us" class="oferdest">
       <div class="container">
 
         <div class="row">

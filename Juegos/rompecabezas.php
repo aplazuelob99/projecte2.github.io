@@ -57,7 +57,7 @@
             <table>
             <tr>
               <td>
-              <div id="contador" class="border 1px" style="background: gold; left: 992px; top:142px; position:absolute; width: 60px; height:50px;  text-align: center; border-color: goldenrod !important;"></div>
+              <div id="contador" class="border 1px" style="background: gold; left: 907px; top:142px; position:absolute; width: 60px; height:50px;  text-align: center; border-color: goldenrod !important;"></div>
               </td>
 			        <tr>
 				        <td><img id="img_0" src="Imagenes_puzzle/img_0.png" onclick="seleccionar(0)" /></td>
@@ -87,7 +87,7 @@
 
         <br>
         
-        <button type="button" id="siguiente" class="border 2px"> Siguiente Juego</button>
+        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="../juegos.php"  style="text-decoration:none"> Menu de Juegos</a></button>
         
        
 
