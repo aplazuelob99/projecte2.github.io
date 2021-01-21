@@ -87,7 +87,7 @@
 
         <br>
         
-        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="../juegos.php"  style="text-decoration:none"> Siguiente Juego</a></button>
+        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="../juegos.php"  style="text-decoration:none"> Menu de Juegos</a></button>
         
        
 
