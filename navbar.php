@@ -72,13 +72,16 @@ if(isset($_SESSION['Id_user'])){
                             </li>
 
                         <li class="drop-down"><i class="bx bx-user-circle bx-md" style="margin-right: 5px;"></i>
-                            <ul style="margin-left : -50px; border-radius: 8px">
+
+                            <ul style="margin-left : -50px; border-radius: 8px; border: 2px solid #7583ff;">
 
                                 <form action="php_library/bd_controller.php" method="POST">
                                     
                                     <li style="margin: 5px;"><?php echo $usuario['Email'] ?></li>
                                     <li style="margin: 5px;"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
-                                    <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white"><i class="bx bx-power-off bx-sm" ></i></button></li>
+                                    <span></span> 
+                                    <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white"><i class='bx bx-power-off bx-sm' style='color:#7583ff'></i></button></li>
+                                    
 
                                 </form>
                             </ul>
@@ -100,6 +103,8 @@ if(isset($_SESSION['Id_user'])){
                                         <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
 
                                         <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>                                      
+
+                                        <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>
 
                                     </form>
 
