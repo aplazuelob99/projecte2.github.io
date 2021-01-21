@@ -92,7 +92,9 @@
         "gamenext": "Next Game"
     },
     "juego2": {
-        "gametitle": "Collect the meat"
+        "gametitle": "Collect the meat",
+        "gamestart": "Start",
+        "gamecontrol": "Controls"
     },
     "juego3": {
         "gametitle": "Bakery"

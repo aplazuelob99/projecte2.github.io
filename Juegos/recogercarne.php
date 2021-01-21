@@ -1,3 +1,17 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "recogercarne.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+    $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+    $contentJson = file_get_contents($contentFile);
+    $content = json_decode($contentJson, true);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +31,7 @@
     <link href="../assets/css/style.css" rel="stylesheet">
     <script src="script_recoger.js" language="javascript" type="text/javascript"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Recoge la carne</title>
+    <title><?php echo $content["juego2"]["gametitle"]; ?></title>
     <link rel="icon" type="image/png" href="img/Beef.png"/>
 
 </head>
@@ -29,9 +43,7 @@
       include_once("../navbar.php");
 
     ?>
-
-
-    
+<?php echo $content["juego2"]["gametitle"]; ?>
 
     <div id="fondojuego">
         
@@ -44,10 +56,10 @@
         <div id="final"></div>
         <div id="contador" class="border 1px"></div>
         <div id="puntuacio" class="border 1px"></div>
-        <button type="button" id="empezar" class="border 1px">Empezar</button>
+        <button type="button" id="empezar" class="border 1px"><?php echo $content["juego2"]["gamestart"]; ?></button>
         <button type="button" id="siguiente" class="border 1px"></button>
         
-        <div id="controles" class="border 3px"><strong>Controles</strong><br><img src="img/controles.png" width="150px" height="100px"></div>
+        <div id="controles" class="border 3px"><strong><?php echo $content["juego2"]["gamecontrol"]; ?></strong><br><img src="img/controles.png" width="150px" height="100px"></div>
         <div id="nivel" class="border 3px"></div>
 
     </div>

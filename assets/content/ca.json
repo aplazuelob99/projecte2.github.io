@@ -91,7 +91,9 @@
         "gamenext": "Següent Joc"
     },
     "juego2": {
-        "gametitle": "Recull la carn"
+        "gametitle": "Recull la carn",
+        "gamestart": "Començar",
+        "gamecontrol": "Controls"
     },
     "juego3": {
         "gametitle": "Fleca"

@@ -90,7 +90,9 @@
         "gamenext": "Siguiente Juego"
     },
     "juego2": {
-        "gametitle": "Recoge la carne"
+        "gametitle": "Recoge la carne",
+        "gamestart": "Empezar",
+        "gamecontrol": "Controles"
     },
     "juego3": {
         "gametitle": "Panadería"
