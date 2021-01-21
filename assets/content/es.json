@@ -1,0 +1,94 @@
+{
+    "navbar": {
+        "mercat": "Mercado de Barcelona",
+        "home": "Inicio",
+        "oferta": "Ofertas",
+        "shops": "Tiendas",
+        "juegos": "Juegos",
+        "fruteria": "Frutería",
+        "carniceria": "Carnicería",
+        "panaderia": "Panadería",
+        "pescaderia": "Pescadería",
+        "login": "Iniciar Sesión",
+        "loginh5": "Entra en tu perfil",
+        "loginemail": "Correo electronico",
+        "loginpassword": "Contraseña",
+        "register": "Registro",
+        "registerh5": "Create una cuenta",
+        "registeremail": "Correo electronico",
+        "registerpassword": "Contraseña",
+        "registerbutton": "Crear cuenta"
+    },
+    "index":{
+        "pagetitle": "Mercado de Barcelona",
+        "titleh1": "Bienvenidos a la página de ofertas del mercado",
+        "titleh2": "En esta página podrás obtener descuentos para los pequeños comercios de Barcelona.",
+        "abouth2": "¿Quien somos?",
+        "abouth3": "Somos un grupo de estudiantes que debido a la situación actual provocada por el COVID-19 hemos decidido ayudar a los comercios locales con esta página web.",
+        "aboutp1": "Esta situación ha obligado a los comercios locales a cerrar sus puertas, en consequencia hay muchas familias que están sufriendo por esta situación y por eso hemos decidido promover la compra en los comercios de antes.<br> En esta página web podrás encontrar toda la información de los pequeños comercios, así mismo los comercios ofrecen ofertas y descuentos que puedes canjear con puntos.<br> Y te estarás preguntando cómo consigo puntos...? ¡MUY SENCILLO!",
+        "aboutli1": "Registrate para poder acceder a la zona de juegos.",
+        "aboutli2": "Juega a nuestros juegos lo mejor que puedas para obtener más puntos.",
+        "aboutli3": "Canjea tus puntos por ofertas... Y a disfrutar!",
+        "aboutp2": "Al canjear una oferta se enviará un correo electrónico con el cúpon seleccionado.",
+        "specialoffer1h4": "70% DE DESCUENTO",
+        "specialoffer1p": "¡CORRE! Aprovecha esta oferta del 70% en cualquier mercado de Barcelona antes de que expire.<br> Precio: 1500pts.",
+        "specialoffercanjear": "Canjear",
+        "specialoffer2h4": "20% DE DESCUENTO",
+        "specialoffer2p": "¡CORRE! Aprovecha esta oferta del 20% en cualquier mercado de Barcelona antes de que expire.",
+        "specialoffer3h4": "Oferta 2x1",
+        "specialoffer3p": "Obten la oferta del mes más popular del momento, un 2 x 1 exclusivo para cualquier mercado. (Solo tiene una validación por usuario)",
+
+        "offerh2": "Ofertas y descuentos",
+        "offerp": "Aqui encontraras las ofertas y descuentos que estan disponibles para los mercados de Barcelona.<br>Mediante los puntos que obtienes en los juegos puedes desbloquear estas ofertas:",
+        "offer1h4": "Descuento de 20%",
+        "offer1p": "Obten un cupon de descuento de 20% de la compra que realices en el <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-del-clot-1'> Mercado del Clot",
+        "offer2h4": "Oferta 2x1",
+        "offer2p": "Consigue esta oferta especial que te permitira por la compra de unos de los productos seleccionados recibirias otro totalmente gratis en el <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-lesseps-0'> Mercado de Lesseps </a>",
+        "offer3h4": "Oferta 50%",
+        "offer3p": "Obten una oferta navideña del 50% de tu compra en el <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-les-corts-1'> Mercado de Les Corts </a> ",
+        "offer4h4": "Oferta especial",
+        "offer4p": "Consigue <strong> SOLO </strong> esta semana una oferta especial del 70% porciento para el <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-sants-1'> Mercado de Sants </a>",
+
+        "tiendash2": "Tiendas",
+        "tiendasp": "Listado de tiendas que se encuentran por Barcelona",
+
+        "tienda1h4": "Mercado de Sants",
+        "tienda1span": "<strong> Dirección: </strong> Carrer de Sant Jordi, 6, 08028 Barcelona",
+        "tiendaphone": "<strong> Teléfono: </strong>",
+        "tienda2h4": "Mercado de Les Corts",
+        "tienda2span": "<strong> Dirección: </strong> Travessera de les Corts, 215, 08028 Barcelona",
+        "tienda3h4": "Mercado de Clot",
+        "tienda3span": "<strong> Dirección: </strong> Plaça del Mercat, 26, 08018 Barcelona",
+        "tienda4h4": "Mercado de Lesseps",
+        "tienda4span": "<strong> Dirección: </strong> Carrer de Verdi, 200, 210, 08024 Barcelona",
+
+        "alumnos": "Diseñado por alumnos del <a href='https://politecnics.barcelona'>Politecnics</a>"
+    },
+    "juegosmain": {
+        "pagetitle": "Mercado de Barcelona",
+        "titleh2": "Juegos",
+        "titlep": "Aqui encontraras una variedad de los juegos diseñado por nosotros en los que podrás conseguir puntos!",
+        "juego1h4": "Macedonia",
+        "juego1instrucciones": "<strong>Instrucciones: </strong>en este juego deberás memorizar la secuencia de frutas de la macedonia para poder avanzar en los niveles y conseguir puntos",
+        "juego2h4": "Recoge la carne",
+        "juego2instrucciones": "<strong>Instrucciones: </strong>este juego trata de ayudar a un señor mayor a completar su compra de la semana guardando la distancia de seguridad con la gente que está comprando en la tienda",
+        "juego3h4": "Panadería",
+        "juego3instrucciones": "<strong>Instrucciones: </strong>en este juego deberás recoger la comida que va cayendo por la parte superior de la pantalla para conseguir puntos",
+        "juego4h4": "Pescadería",
+        "juego4instrucciones": "<strong>Instrucciones: </strong> intenta realizar este puzzle antes de que termine el tiempo para poder conseguir más puntos.",
+        "alumnos": "Diseñado por alumnos del <a href='https://politecnics.barcelona'> Politecnics </a>"
+
+    },
+    "juego1": {
+        
+    },
+    "juego2": {
+        
+    },
+    "juego3": {
+        
+    },
+    "juego4": {
+        
+    }
+}

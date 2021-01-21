@@ -1,10 +1,24 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "index.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+  $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+  $contentJson = file_get_contents($contentFile);
+  $content = json_decode($contentJson, true);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Mercado de Barcelona</title>
+  <title><?php echo $content["index"]["pagetitle"]; ?></title>
   
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="assets/img/logo.png"/>
@@ -36,8 +50,8 @@
   <!-- ======= titulo ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-      <h1>Bienvenidos a la página de ofertas del mercado</h1>
-      <h2>En esta página podrás obtener descuentos para los pequeños comercios de Barcelona.</h2>
+      <h1><?php echo $content["index"]["titleh1"]; ?></h1>
+      <h2><?php echo $content["index"]["titleh2"]; ?></h2>
     </div>
   </section><!-- End titulo -->
 
@@ -49,23 +63,20 @@
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <h2>Quien somos?</h2>
-            <h3>Somos un grupo de estudiantes que debido a la situación actual provocada por el COVID-19 hemos decidido ayudar a los comercios locales con esta página web.</h3>
+            <h2><?php echo $content["index"]["abouth2"]; ?></h2>
+            <h3><?php echo $content["index"]["abouth3"]; ?></h3>          
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
             <p>
-              Esta situación ha obligado a los comercios locales a cerrar sus puertas, en consequencia hay muchas familias que están sufriendo por esta situación y por eso hemos decidido
-              promover la compra en los comercios de antes.<br>
-              En esta página web podrás encontrar toda la información de los pequeños comercios, así mismo los comercios ofrecen ofertas y descuentos que puedes canjear con puntos.<br>
-              Y te estarás preguntando cómo consigo puntos...? ¡MUY SENCILLO!
+              <?php echo $content["index"]["aboutp1"]; ?>
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Registrate para poder acceder a la zona de juegos.</li>
-              <li><i class="ri-check-double-line"></i> Juega nuestros juegos lo mejor que puedas para obtener más puntos.</li>
-              <li><i class="ri-check-double-line"></i> Canjea tus puntos por ofertas... Y a disfrutar!</li>
+            <ul> 
+              <li><i class="ri-check-double-line"></i> <?php echo $content["index"]["aboutli1"]; ?></li>
+              <li><i class="ri-check-double-line"></i> <?php echo $content["index"]["aboutli2"]; ?></li>
+              <li><i class="ri-check-double-line"></i> <?php echo $content["index"]["aboutli3"]; ?></li>
             </ul>
             <p class="font-italic">
-              Al canjear una oferta se enviará un correo electrónico con el cúpon seleccionado.
+              <?php echo $content["index"]["aboutp2"]; ?>
             </p>
           </div>
         </div>
@@ -82,13 +93,12 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
             <div class="content" style="height: 100%;">
               <div><img src="assets/img/ofertflash.png" class="img-fluid" width="100%" height="100%" alt=""></div>
-              <h4><u>70% DE DESCUENTO</u></h4>
+              <h4><u><?php echo $content["index"]["specialoffer1h4"]; ?></u></h4>
               <p>
-                ¡CORRE! Arovecha esta oferta del 70% en cualquier mercado de Barcelona antes de que expire.<br>
-                Precio: 1500pts.
+              <?php echo $content["index"]["specialoffer1p"]; ?>
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Canjear <i class="bx bx-chevron-right"></i></a>
+                <a href="#" class="more-btn"><?php echo $content["index"]["specialoffercanjear"]; ?> <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -96,12 +106,12 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
             <div class="content" style="height: 100%;">
             <div><img src="assets/img/ofertdia.png" class="img-fluid" width="100%" height="70%" alt=""></div><br><br><br>
-              <h4><u>20% DE DESCUENTO</u></h4>
+              <h4><u><?php echo $content["index"]["specialoffer2h4"]; ?></u></h4>
               <p>
-                Canjea esta oferta diaria del 20% de descuento en cualquier mercado de Barcelona antes de que termine el dia.
+              <?php echo $content["index"]["specialoffer2p"]; ?>
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Canjear <i class="bx bx-chevron-right"></i></a>
+                <a href="#" class="more-btn"><?php echo $content["index"]["specialoffercanjear"]; ?> <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -109,13 +119,12 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
             <div class="content" style="height: 100%;">
             <div><img src="assets/img/ofertmes.png" class="img-fluid" width="50%" height="0%" style="margin-left: 25%;"></div>
-              <h4><u>Oferta 2x1</u></h4>
+              <h4><u><?php echo $content["index"]["specialoffer3h4"]; ?></u></h4>
               <p>
-                Obten la oferta del mes más popular del momento, un 2 x 1 exclusivo para cualquier mercado.
-                (Solo tiene una validación por usuario)
+              <?php echo $content["index"]["specialoffer3p"]; ?>
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Canjear <i class="bx bx-chevron-right"></i></a>
+                <a href="#" class="more-btn"><?php echo $content["index"]["specialoffercanjear"]; ?> <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -134,9 +143,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="section-title" data-aos="fade-right">
-              <h2>Ofertas y descuentos</h2>
-              <p>Aqui encontraras las ofertas y descuentos que estan disponibles para los mercados de Barcelona.<br>Mediante los puntos que obtienes en los juegos
-            puedes desbloquear estas ofertas:</p>
+              <h2><?php echo $content["index"]["offerh2"]; ?></h2>
+              <p><?php echo $content["index"]["offerp"]; ?></p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -144,11 +152,11 @@
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
                   <div><img src="assets/img/20-porciento.png" class="img-fluid" width="70%" height="70%" alt=""></div>
-                  <h4><a href="">Descuento de 20%</a></h4>
-                  <p>Obten un cupon de descuento de 20% de la compra que realices en el <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-del-clot-1">Mercado del Clot</a></p>
+                  <h4><a href=""><?php echo $content["index"]["offer1h4"]; ?></a></h4>
+                  <p><?php echo $content["index"]["offer1p"]; ?></p>
                   <br>
                   <div class="text-center border fixed-bottom" id="canjear" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
-                    <a href="#about">Canjear</a></li>
+                    <a href="#about"><?php echo $content["index"]["specialoffercanjear"]; ?></a></li>
                   </div>
                   
                 </div>
@@ -157,12 +165,11 @@
               <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
                   <div><img src="assets/img/2x1ofert.png" class="img-fluid" width="80%" height="80%"></div>
-                  <h4><a href="">Oferta 2x1</a></h4>
-                  <p>Consigue esta oferta especial que te permitira por la compra de unos de los productos seleccionados recibirias otro totalmente gratis en el 
-                    <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-lesseps-0">Mercado de Lesseps</a></p>
+                  <h4><a href=""><?php echo $content["index"]["offer2h4"]; ?></a></h4>
+                  <p><?php echo $content["index"]["offer2p"]; ?></p>
                     <br>
                     <div class="text-center border fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
-                    <a href="#about">Canjear</a>
+                    <a href="#about"><?php echo $content["index"]["specialoffercanjear"]; ?></a>
                   </div>
                 </div>
               </div>
@@ -170,11 +177,11 @@
               <div class="col-md-6 d-flex align-items-stretch mt-4">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
                   <div><img src="assets/img/ofertanavid.png" class="img-fluid" width="70%" height="70%"></div>
-                  <h4><a href="">Oferta 50%</a></h4>
-                  <p>Obten una oferta navideña del 50% de tu compra en el <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-les-corts-1">Mercado de Les Corts</a></p>
+                  <h4><a href=""><?php echo $content["index"]["offer3h4"]; ?></a></h4>
+                  <p><?php echo $content["index"]["offer2p"]; ?></p>
                   <br>
                   <div class="text-center border  fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
-                    <a href="#about">Canjear</a>
+                    <a href="#about"><?php echo $content["index"]["specialoffercanjear"]; ?></a>
                   </div>
                 </div>
               </div>
@@ -182,11 +189,11 @@
               <div class="col-md-6 d-flex align-items-stretch mt-4">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
                 <div><img src="assets/img/ofertaesp.png" class="img-fluid" width="100%" height="100%"></div><br>
-                  <h4><a href="">Oferta especial</a></h4>
-                  <p>Consigue <strong>SOLO</strong> esta semana una oferta especial del 70% porciento para el 
-                  <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-sants-1"> Mercado de Sants</a></p><br>
+                  <h4><a href=""><?php echo $content["index"]["offer4h4"]; ?></a></h4>
+                  <p><?php echo $content["index"]["offer4p"]; ?></p><br>
                   <div class="text-center border fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
-                    <a href="#about">Canjear</a>
+                    <a href="#about"><?php echo $content["index"]["specialoffercanjear"]; ?>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -205,8 +212,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="section-title" data-aos="fade-right">
-              <h2>Tiendas</h2>
-              <p>Listado de tiendas que se encuentran por Barcelona</p>
+              <h2><?php echo $content["index"]["tiendash2"]; ?></h2>
+              <p><?php echo $content["index"]["tiendasp"]; ?></p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -216,9 +223,9 @@
                 <div class="tienda" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pic"><img src="assets/img/mercat-de-sants.jpg" class="img-fluid" width="100%" height="100%"></div>
                   <div class="tienda-info">
-                    <h4>Mercado de Sants</h4>
-                    <span><strong>Dirección: </strong>Carrer de Sant Jordi, 6, 08028 Barcelona</span>
-                    <p><strong>Teléfono: </strong> 934 13 22 29</p>
+                    <h4><?php echo $content["index"]["tienda1h4"]; ?></h4>
+                    <span><?php echo $content["index"]["tienda1span"]; ?></span>
+                    <p><?php echo $content["index"]["tiendaphone"]; ?> 934 13 22 29</p>
                   </div>
                 </div>
               </div>
@@ -227,9 +234,9 @@
                 <div class="tienda" data-aos="zoom-in" data-aos-delay="200">
                   <div class="pic"><img src="assets/img/mercat-de-clot.jpg" class="img-fluid" width="100%" height="100%"></div>
                   <div class="tienda-info">
-                    <h4>Mercado de Clot</h4>
-                    <span><strong>Dirección: </strong>Plaça del Mercat, 26, 08018 Barcelona</span>
-                    <p><strong>Teléfono: </strong>932 65 90 90</p>
+                    <h4><?php echo $content["index"]["tienda2h4"]; ?></h4>
+                    <span><?php echo $content["index"]["tienda2span"]; ?></span>
+                    <p><?php echo $content["index"]["tiendaphone"]; ?>932 65 90 90</p>
                   </div>
                 </div>
               </div>
@@ -238,8 +245,8 @@
                 <div class="tienda" data-aos="zoom-in" data-aos-delay="300">
                   <div class="pic"><img src="assets/img/mercat-de-les-corts.jpg" class="img-fluid" width="100%" height="100%"></div>
                   <div class="tienda-info">
-                    <h4>Mercado de Les Corts</h4>
-                    <span><strong>Dirección: </strong>Travessera de les Corts, 215, 08028 Barcelona</span>
+                    <h4><?php echo $content["index"]["tienda3h4"]; ?></h4>
+                    <span><?php echo $content["index"]["tienda3span"]; ?></span>
                     <p><strong>Email: </strong>info@mercatdelescorts.cat</p>
                   </div>
                 </div>
@@ -249,9 +256,9 @@
                 <div class="tienda" data-aos="zoom-in" data-aos-delay="400">
                   <div class="pic"><img src="assets/img/mercat-de-lesseps.jpeg" class="img-fluid" width="100%" height="100%"></div>
                   <div class="tienda-info">
-                    <h4>Mercado de Lesseps</h4>
-                    <span><strong>Dirección: </strong>Carrer de Verdi, 200, 210, 08024 Barcelona</span>
-                    <p><strong>Teléfono: </strong>934 13 23 19</p>
+                    <h4><?php echo $content["index"]["tienda4h4"]; ?></h4>
+                    <span><?php echo $content["index"]["tienda4span"]; ?></span>
+                    <p><?php echo $content["index"]["tiendaphone"]; ?>934 13 23 19</p>
                   </div>
                 </div>
               </div>
@@ -276,7 +283,7 @@
 
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
-          Diseñado por alumnos del <a href="https://politecnics.barcelona">Politecnics</a>
+        <?php echo $content["index"]["alumnos"]; ?>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

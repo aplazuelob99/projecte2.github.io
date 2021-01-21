@@ -1,0 +1,96 @@
+{
+    "navbar": {
+        "mercat": "Market of Barcelona",
+        "home": "Home",
+        "oferta": "Offers",
+        "shops": "Shops",
+        "juegos": "Games",
+        "fruteria": "Fruit store",
+        "carniceria": "Butcher shop",
+        "panaderia": "Bakery",
+        "pescaderia": "Fish shop",
+        "login": "Log in",
+        "loginh5": "Enter your profile",
+        "loginemail": "Email",
+        "loginpassword": "Password",
+        "register": "Register",
+        "registerh5": "Create an account",
+        "registeremail": "Email",
+        "registerpassword": "Password",
+        "registerbutton": "Create account"
+    },
+    "index":{
+        "pagetitle": "Market of Barcelona",
+        "titleh1": "Welcome to the market offers website",
+        "titleh2": "On this website you can get discounts for the small shops of Barcelona.",
+        "abouth2": "Who are we?",
+        "abouth3": "We are a group of students who, due to the current situation caused by COVID-19, have decided to help local businesses with this website.",
+        "aboutp1": "This situation has forced local businesses to close their doors, consequently there are many families who are suffering from this situation and that is why we have decided to promote shopping in old stores. <br> On this website you can find all the information of small businesses, likewise businesses offer offers and discounts that you can exchange with points. <br> And you might be wondering how I get points ...? VERY EASY!",
+        "aboutli1": "Register to access the games area.",
+        "aboutli2": "Play our games the best you can and earn more points.",
+        "aboutli3": "Redeem your points for offers... And enjoy!",
+        "aboutp2": "When redeeming an offer an email will be sent with the selected coupon.",
+
+
+        "specialoffer1h4": "70% OFF",
+        "specialoffer1p": "FAST! Take advantage of this 70% offer in any market in Barcelona before it expires.<br> Price: 1500pts.",
+        "specialoffercanjear": "Redeem",
+        "specialoffer2h4": "20% OFF",
+        "specialoffer2p": "FAST! Take advantage of this 20% offer in any market in Barcelona before it expires.",
+        "specialoffer3h4": "2x1 Offer",
+        "specialoffer3p": "Get the most popular offer of the month, an exclusive 2 x 1 for any market. (It only has one validation per user)",
+
+        "offerh2": "Offers and discounts",
+        "offerp": "Here you will find the offers and discounts that are available for the Barcelona markets. <br>  Using the points you get in the games you can unlock these offers:",
+        "offer1h4": "20% Off",
+        "offer1p": "Get a discount coupon of 20% of the purchase you make in the  <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-del-clot-1'> Clot market </a>",
+        "offer2h4": "2x1 Offer",
+        "offer2p": "Get this special offer that will allow you to buy one of the selected products you would receive another totally free in the <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-lesseps-0'> Lesseps market </a> ",
+        "offer3h4": "50% Offer",
+        "offer3p": "Get a Christmas offer of 50% of your purchase in the <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-les-corts-1'> Les Corts market </a> ",
+        "offer4h4": "Special Offer",
+        "offer4p": "Get <strong> ONLY </strong> this week a special offer of 70% percent for the <a href='https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-sants-1'> Sants market </a>",
+        
+        "tiendash2": "Shops",
+        "tiendasp": "List of shops in Barcelona",
+
+        "tienda1h4": "Sants market",
+        "tienda1span": "<strong> Address: </strong> Carrer de Sant Jordi, 6, 08028 Barcelona",
+        "tiendaphone": "<strong> Phone number: </strong>",
+        "tienda2h4": "Les Corts market",
+        "tienda2span": "<strong> Address: </strong> Travessera de les Corts, 215, 08028 Barcelona",
+        "tienda3h4": "Clot market",
+        "tienda3span": "<strong> Address: </strong> Plaça del Mercat, 26, 08018 Barcelona",
+        "tienda4h4": "Lesseps market",
+        "tienda4span": "<strong> Address: </strong> Carrer de Verdi, 200, 210, 08024 Barcelona",
+
+        "alumnos": "Designed by students from <a href='https://politecnics.barcelona'>Politecnics</a>"
+    },
+    "juegosmain": {
+        "pagetitle": "Market of Barcelona",
+        "titleh2": "Games",
+        "titlep": "Here you will find a variety of games designed by us where you can get points!",
+        "juego1h4": "Fruit salad",
+        "juego1instrucciones": "<strong> Instructions: </strong> in this game you will have to memorize the sequence of fruit of the fruit salad to be able to advance in the levels and get points",
+        "juego2h4": "Collect the meat",
+        "juego2instrucciones": "<strong> Instructions: </strong> this game tries to help an older man to complete his purchase of the week by keeping a safe distance with the people who are buying in the store",
+        "juego3h4": "Bakery",
+        "juego3instrucciones": "<strong> Instructions: </strong> in this game you must collect the food that is falling from the top of the screen to get points",
+        "juego4h4": "Fish shop",
+        "juego4instrucciones": "<strong> Instructions: </strong> try to complete this puzzle before time runs out in order to get more points.",
+        
+        "alumnos": "Designed by students from <a href='https://politecnics.barcelona'>Politecnics</a>"
+    },
+    "juego1": {
+
+    },
+    "juego2": {
+        
+    },
+    "juego3": {
+        
+    },
+    "juego4": {
+        
+    }
+}
