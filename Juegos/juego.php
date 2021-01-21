@@ -1,3 +1,17 @@
+<?php
+    $DEFAULT_LANG = "en";
+    $currentPage = "juego.php";
+
+    if (isset($_POST['lang'])) {
+        $_SESSION['language'] = $_POST['lang'];
+    } else if (!isset($_SESSION['language'])) {
+        $_SESSION['language'] = $DEFAULT_LANG;
+    }
+
+  $contentFile = $_SERVER['DOCUMENT_ROOT'] . "/projecte2.github.io/assets/content/" . $_SESSION['language'] . ".json";
+  $contentJson = file_get_contents($contentFile);
+  $content = json_decode($contentJson, true);
+?>
 <html>
     <head>
 
@@ -13,7 +27,7 @@
         <link rel="stylesheet" href="styles/cssjuego.css" type="text/css">
         <link href="../assets/css/style.css" rel="stylesheet">
 
-        <title>Macedonia</title>
+        <title><?php echo $content["juego1"]["gametitle"]; ?></title>
       <link rel="icon" type="image/png" href="img/piña.png"/>
     </head>
 <body>
@@ -28,9 +42,9 @@
     
 <div class="contenedor" style="margin-top: 0%">
 <div id="capanieve"></div>
-  <h1 id="salida" class="border 1px">MACEDONIA</h1>
+  <h1 id="salida" class="border 1px"><?php echo $content["juego1"]["gameh1"]; ?></h1>
 
-    <h2 id="puntos" class="border 1px">Puntos</h2>
+    <h2 id="puntos" class="border 1px"><?php echo $content["juego1"]["gameh2"]; ?></h2>
     
     <div class="pantalla" id="pantalla" style="left: 30%; top: 20%">
         <div class="fruta" id="rojo" data-izquierda="false"></div>
@@ -41,8 +55,8 @@
         <div class="fruta" id ="verde" data-izquierda="true"></div>
         <div class="macedonia"></div>
         <div class="macedonia" id="cuenta"></div>
-        <button class="macedonia" id="empezar">Empezar</button>
-        <button class="macedonia" id="siguiente">Siguiente Juego</button>
+        <button class="macedonia" id="empezar"><?php echo $content["juego1"]["gamestart"]; ?></button>
+        <button class="macedonia" id="siguiente"><?php echo $content["juego1"]["gamenext"]; ?></button>
 
 
         

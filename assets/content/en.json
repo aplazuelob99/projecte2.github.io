@@ -85,15 +85,19 @@
         "alumnos": "Designed by students from <a href='https://politecnics.barcelona'>Politecnics</a>"
     },
     "juego1": {
-
+        "gametitle": "Fruit salad",
+        "gameh1": "FRUIT SALAD",
+        "gameh2": "Points",
+        "gamestart": "Start",
+        "gamenext": "Next Game"
     },
     "juego2": {
-        
+        "gametitle": "Collect the meat"
     },
     "juego3": {
-        
+        "gametitle": "Bakery"
     },
     "juego4": {
-        
+        "gametitle": "Fish shop"
     }
 }

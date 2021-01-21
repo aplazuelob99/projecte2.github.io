@@ -83,15 +83,19 @@
 
     },
     "juego1": {
-        
+        "gametitle": "Macedonia",
+        "gameh1": "MACEDONIA",
+        "gameh2": "Puntos",
+        "gamestart": "Empezar",
+        "gamenext": "Siguiente Juego"
     },
     "juego2": {
-        
+        "gametitle": "Recoge la carne"
     },
     "juego3": {
-        
+        "gametitle": "Panadería"
     },
     "juego4": {
-        
+        "gametitle": "Pescadería"
     }
 }
