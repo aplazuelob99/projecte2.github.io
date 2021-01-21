@@ -46,8 +46,9 @@
         <div id="puntuacio" class="border 1px"></div>
         <button type="button" id="empezar" class="border 1px">Empezar</button>
         <button type="button" id="siguiente" class="border 1px"></button>
-        <div id="nivel"><strong>Nivel</strong></div>
+        
         <div id="controles" class="border 3px"><strong>Controles</strong><br><img src="img/controles.png" width="150px" height="100px"></div>
+        <div id="nivel" class="border 3px"></div>
 
     </div>
     

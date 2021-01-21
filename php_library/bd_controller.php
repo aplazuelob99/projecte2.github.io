@@ -6,10 +6,27 @@ require_once("bd.php");
 
 if(isset($_POST['botoncrear'])){
 
-    registrarse($_POST['correo'], $_POST['password']);
+    $usuarios = selectuser();
+    $_SESSION['unico'] = false;
 
-    header('Location: ../index.php');
-    exit();
+    foreach($usuarios as $usuario){
+        if($usuario['Email'] == $_POST['correo']){
+            
+            $_SESSION['unico'] = true;
+            header('Location: ../index.php');
+            exit();
+
+        }else{
+            registrarse($_POST['correo'], $_POST['password']);
+
+            unset($_SESSION['unico']);
+            header('Location: ../index.php');
+            exit();
+
+        }
+    }
+
+    
 }
 
 
@@ -23,8 +40,6 @@ if(isset($_POST['iniciarsess'])){
         if($usuario['Email'] == $_POST['correo'] && $usuario['Contrasenya'] == $_POST['password']){
             
             $_SESSION['Id_user'] = $usuario['Id'];
-            // $id = $_SESSION['Id_user'];
-            // iniciarsess($id);
             unset($_SESSION['error']);
             header('Location: ../index.php');
             exit();

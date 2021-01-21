@@ -100,17 +100,7 @@ if(isset($_SESSION['Id_user'])){
                                             
                                             <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
 
-                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>  
-
-                                            
-                                            <?php if(isset($_SESSION['error']) == true){ ?>
-
-                                            <div class="alert alert-danger" style="margin: 10px;" role="alert">
-                                               Correo electronico o <br>    Contraseña incorrectos...
-                                            </div>
-                                            <?php unset($_SESSION['error']); ?>
-
-                                            <?php } ?>
+                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li> 
 
                                             <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>  
 
@@ -122,7 +112,7 @@ if(isset($_SESSION['Id_user'])){
 
                             </li>
 
-                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label">Registrarse</label>
+                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label" autofocus>Registrarse</label>
 
                                 <ul id="columsess">
 
@@ -145,9 +135,45 @@ if(isset($_SESSION['Id_user'])){
                         <?php } ?>
                 
                     </ul>
+
                 </nav>
+
+                    
+                    
+
             </div>
         </div>
+
+        <?php if(isset($_SESSION['unico']) == true){ ?>
+
+            <div class="alert" style="margin: 10px; background-color: gold; border: 2px solid goldenrod;" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            Este correo electrónico ya existe...
+
+            
+            </div>
+            <?php unset($_SESSION['unico']); ?>
+
+
+        <?php } ?>
+
+        <?php if(isset($_SESSION['error']) == true){ ?>
+
+            <div class="alert" style="margin: 10px; background-color :gold; border: 2px solid goldenrod;" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            Correo electrónico o Contraseña incorrectos...
+            
+            </div>
+            <?php unset($_SESSION['error']); ?>
+
+        <?php } ?>
+
+
     </header>
     
 

@@ -15,6 +15,7 @@ nivel = 1;
 document.getElementById("nivel").innerHTML = "<strong>Nivel: " + nivel + "</strong>";
 document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación</strong> <br> </p>";
 puntuacio = 0;
+document.cookie = "puntuacion_juego =" +  puntuacio; "path=/";
 //Variables para poder hacer el detector de colisiones
 var jugadorw, jugadorh, jugadorx, jugadory;
 var comidaw, comidah, comidax, comiday;
