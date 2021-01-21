@@ -9,7 +9,7 @@
             "request": "launch",
 
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:80/projecte2.github.io/juegos/juego.php",
+            "url": "http://localhost:80/projecte2.github.io/index.php",
 
             "webRoot": "${workspaceFolder}"
         }

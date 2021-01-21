@@ -36,7 +36,7 @@
        
        ?>
 
-        <section id="juegos" class="team" style="margin-top: 3%;">
+        <section id="juegos" class="tiendas" style="margin-top: 3%;">
 
             <div class="container">
 
@@ -62,11 +62,11 @@
 
                                 <a href="Juegos/juego.php" style="text-decoration:none;color:black;">
                             
-                                    <div class="member" data-aos="zoom-in" data-aos-delay="100" style="background-color:white;">
+                                    <div class="tienda" data-aos="zoom-in" data-aos-delay="100" style="background-color:white;">
 
                                         <div class="pic"><img src="assets/img/Capturaeric.png" class="img-fluid" width="100%" height="100%"></div>
 
-                                        <div class="member-info">
+                                        <div class="tienda-info">
 
                                             <h4>Macedonia</h4>
 
@@ -86,11 +86,11 @@
                                 <a href="Juegos/recogercarne.php" style="text-decoration:none;color:black;">
                             
                             
-                                    <div class="member" data-aos="zoom-in" data-aos-delay="200" style="background-color:white;">
+                                    <div class="tienda" data-aos="zoom-in" data-aos-delay="200" style="background-color:white;">
 
                                         <div class="pic"><img src="assets/img/Capturaplazu.png" class="img-fluid" width="100%" height="100%"></div>
 
-                                        <div class="member-info">
+                                        <div class="tienda-info">
 
                                             <h4>Recoge la carne</h4>
 
@@ -111,11 +111,11 @@
 
                                 <a href="Juegos/cesta.php" style="text-decoration:none;color:black;">
 
-                                    <div class="member" data-aos="zoom-in" data-aos-delay="300" style="background-color:white;">
+                                    <div class="tienda" data-aos="zoom-in" data-aos-delay="300" style="background-color:white;">
 
                                         <div class="pic"><img src="assets/img/Capturacarles.png" class="img-fluid" width="100%" height="100%"></div>
 
-                                        <div class="member-info">
+                                        <div class="tienda-info">
 
                                             <h4>Panadería</h4>
 
@@ -138,11 +138,11 @@
 
                                 <a href="Juegos/rompecabezas.php" style="text-decoration:none;color:black;">
                             
-                                    <div class="member" data-aos="zoom-in" data-aos-delay="400" style="background-color:white;">
+                                    <div class="tienda" data-aos="zoom-in" data-aos-delay="400" style="background-color:white;">
                                 
                                         <div class="pic"><img src="assets/img/Capturacristian.png" class="img-fluid" width="100%" height="100%"></div>
                 
-                                        <div class="member-info">
+                                        <div class="tienda-info">
 
                                             <h4>Pescadería</h4>
 

@@ -128,7 +128,7 @@
     </section>
 
     <!-- ======= Ofertas ======= -->
-    <section id="ofertas" class="services section-bg">
+    <section id="ofertas" class="ofertas section-bg">
       <div class="container">
 
         <div class="row">
@@ -199,7 +199,7 @@
     </section><!-- Fin Ofertas -->
 
     <!-- ======= Tiendas ======= -->
-    <section id="tiendas" class="team">
+    <section id="tiendas" class="tiendas">
       <div class="container">
 
         <div class="row">
@@ -213,9 +213,9 @@
             <div class="row">
 
               <div class="col-lg-6">
-                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                <div class="tienda" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pic"><img src="assets/img/mercat-de-sants.jpg" class="img-fluid" width="100%" height="100%"></div>
-                  <div class="member-info">
+                  <div class="tienda-info">
                     <h4>Mercado de Sants</h4>
                     <span><strong>Dirección: </strong>Carrer de Sant Jordi, 6, 08028 Barcelona</span>
                     <p><strong>Teléfono: </strong> 934 13 22 29</p>
@@ -224,9 +224,9 @@
               </div>
 
               <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                <div class="tienda" data-aos="zoom-in" data-aos-delay="200">
                   <div class="pic"><img src="assets/img/mercat-de-clot.jpg" class="img-fluid" width="100%" height="100%"></div>
-                  <div class="member-info">
+                  <div class="tienda-info">
                     <h4>Mercado de Clot</h4>
                     <span><strong>Dirección: </strong>Plaça del Mercat, 26, 08018 Barcelona</span>
                     <p><strong>Teléfono: </strong>932 65 90 90</p>
@@ -235,9 +235,9 @@
               </div>
 
               <div class="col-lg-6 mt-4">
-                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                <div class="tienda" data-aos="zoom-in" data-aos-delay="300">
                   <div class="pic"><img src="assets/img/mercat-de-les-corts.jpg" class="img-fluid" width="100%" height="100%"></div>
-                  <div class="member-info">
+                  <div class="tienda-info">
                     <h4>Mercado de Les Corts</h4>
                     <span><strong>Dirección: </strong>Travessera de les Corts, 215, 08028 Barcelona</span>
                     <p><strong>Email: </strong>info@mercatdelescorts.cat</p>
@@ -246,9 +246,9 @@
               </div>
 
               <div class="col-lg-6 mt-4">
-                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                <div class="tienda" data-aos="zoom-in" data-aos-delay="400">
                   <div class="pic"><img src="assets/img/mercat-de-lesseps.jpeg" class="img-fluid" width="100%" height="100%"></div>
-                  <div class="member-info">
+                  <div class="tienda-info">
                     <h4>Mercado de Lesseps</h4>
                     <span><strong>Dirección: </strong>Carrer de Verdi, 200, 210, 08024 Barcelona</span>
                     <p><strong>Teléfono: </strong>934 13 23 19</p>

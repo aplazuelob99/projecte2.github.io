@@ -447,15 +447,11 @@ section{
   color: #7583ff;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
-}
 
 
 
-/*--------------------------------------------------------------
-# ofertas destacadas
---------------------------------------------------------------*/
+
+/* ofertas destacadas */
 .oferdest .content {
   padding: 30px;
   background: #7583ff;
@@ -510,17 +506,15 @@ section{
 }
 
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
+/* Ofertas */
+.ofertas .icon-box {
   text-align: center;
   padding: 40px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
 
-.services .icon-box .icon {
+.ofertas .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -534,50 +528,48 @@ section{
   color: #7583ff;
 }
 
-.services .icon-box .icon i {
+.ofertas .icon-box .icon i {
   font-size: 28px;
 }
 
-.services .icon-box h4 {
+.ofertas .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.ofertas .icon-box h4 a {
   color: #36343a;
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box p {
+.ofertas .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.ofertas .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
-.services .icon-box:hover h4 a {
+.ofertas .icon-box:hover h4 a {
   color: #7583ff;
 }
 
-.services .icon-box:hover .icon {
+.ofertas .icon-box:hover .icon {
   color: #fff;
   background: #7583ff;
 }
 
 
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
+/* Tiendas*/
+.tiendas {
   background: #fff;
 }
 
-.team .member {
+.tiendas .tienda {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -585,29 +577,29 @@ section{
   text-align: center;
 }
 
-.team .member .pic {
+.tiendas .tienda .pic {
   overflow: hidden;
   width: 150px;
   border-radius: 50%;
   margin: 0 auto 20px auto;
 }
 
-.team .member .pic img {
+.tiendas .tienda .pic img {
   transition: ease-in-out 0.3s;
 }
 
-.team .member:hover img {
+.tiendas .tienda:hover img {
   transform: scale(1.1);
 }
 
-.team .member h4 {
+.tiendas .tienda h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #36343a;
 }
 
-.team .member span {
+.tiendas .tienda span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
@@ -615,7 +607,7 @@ section{
   font-weight: 500;
 }
 
-.team .member span::after {
+.tiendas .tienda span::after {
   content: '';
   position: absolute;
   display: block;
@@ -627,19 +619,19 @@ section{
   transform: translateX(-50%);
 }
 
-.team .member p {
+.tiendas .tienda p {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 
-.team .member .social {
+.tiendas .tienda .social {
   margin-top: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team .member .social a {
+.tiendas .tienda .social a {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -650,156 +642,27 @@ section{
   background: #a8a5ae;
 }
 
-.team .member .social a i {
+.tiendas .tienda .social a i {
   color: #fff;
   font-size: 16px;
   margin: 0 2px;
 }
 
-.team .member .social a:hover {
+.tiendas .tienda .social a:hover {
   background: #7583ff;
 }
 
-.team .member .social a + a {
+.tiendas .tienda .social a + a {
   margin-left: 8px;
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 #footer {
   color: #444444;
   font-size: 14px;
   background: #f1f0f2;
 }
-
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #f9f8f9;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h4 {
-  font-size: 22px;
-  margin: 0 0 30px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #777777;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #00c28e;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #777777;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #7583ff;
-}
-
-#footer .footer-newsletter {
-  font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  text-align: left;
-  border: 1px solid #e4e3e6;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #7583ff;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #00664b;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #444444;
-}
-
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
