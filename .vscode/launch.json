@@ -7,13 +7,10 @@
         {
             "type": "chrome",
             "request": "launch",
-<<<<<<< HEAD
+
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:80/projecte2.github.io/index.php",
-=======
-            "type": "pwa-chrome",
-            "url": "http://localhost:8080/projecte2.github.io/juegos/rompecabezas.php",
->>>>>>> 4ba87d9382590ddf07b7d2f7356ddb51d32c87f9
+            "url": "http://localhost:80/projecte2.github.io/juegos/juego.php",
+
             "webRoot": "${workspaceFolder}"
         }
         
