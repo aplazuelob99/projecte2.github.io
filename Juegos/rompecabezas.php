@@ -87,7 +87,7 @@
 
         <br>
         
-        <button type="button" id="siguiente" class="border 2px"> Siguiente Juego</button>
+        <button type="button" id="siguiente" class="border 2px" style="position: absolute;"> <a href="enigma_marc/index.html"  style="text-decoration:none"> Siguiente Juego</a></button>
         
        
 
