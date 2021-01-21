@@ -173,7 +173,7 @@
 
 
         <!-- ======= Footer ======= -->
-        <footer id="footer" class="fixed-bottom">
+        <footer id="footer">
 
     
 
