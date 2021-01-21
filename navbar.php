@@ -106,7 +106,7 @@ if(isset($_SESSION['Id_user'])){
                                             <?php if(isset($_SESSION['error']) == true){ ?>
 
                                             <div class="alert alert-danger" style="margin: 10px;" role="alert">
-                                               Correo electronico o <br>    contraseña incorrectos...
+                                               Correo electronico o <br>    Contraseña incorrectos...
                                             </div>
                                             <?php unset($_SESSION['error']); ?>
 
