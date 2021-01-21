@@ -147,7 +147,7 @@
                   <h4><a href="">Descuento de 20%</a></h4>
                   <p>Obten un cupon de descuento de 20% de la compra que realices en el <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-del-clot-1">Mercado del Clot</a></p>
                   <br>
-                  <div class="text-center border" id="canjear">
+                  <div class="text-center border fixed-bottom" id="canjear" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
                     <a href="#about">Canjear</a></li>
                   </div>
                   
@@ -161,7 +161,7 @@
                   <p>Consigue esta oferta especial que te permitira por la compra de unos de los productos seleccionados recibirias otro totalmente gratis en el 
                     <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-lesseps-0">Mercado de Lesseps</a></p>
                     <br>
-                    <div class="text-center border">
+                    <div class="text-center border fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
                     <a href="#about">Canjear</a>
                   </div>
                 </div>
@@ -173,7 +173,7 @@
                   <h4><a href="">Oferta 50%</a></h4>
                   <p>Obten una oferta navideña del 50% de tu compra en el <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-les-corts-1">Mercado de Les Corts</a></p>
                   <br>
-                  <div class="text-center border">
+                  <div class="text-center border  fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
                     <a href="#about">Canjear</a>
                   </div>
                 </div>
@@ -185,7 +185,7 @@
                   <h4><a href="">Oferta especial</a></h4>
                   <p>Consigue <strong>SOLO</strong> esta semana una oferta especial del 70% porciento para el 
                   <a href="https://ajuntament.barcelona.cat/mercats/es/content/mercado-de-sants-1"> Mercado de Sants</a></p><br>
-                  <div class="text-center border">
+                  <div class="text-center border fixed-bottom" style="margin-bottom: 20px; margin-right: 20px; margin-left: 20px">
                     <a href="#about">Canjear</a>
                   </div>
                 </div>

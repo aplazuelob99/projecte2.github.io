@@ -78,7 +78,6 @@ if(isset($_SESSION['Id_user'])){
                                     
                                         <li style="margin: 5px;" id="infouser"><?php echo $usuario['Email'] ?></li>
                                         <li style="margin: 5px;" id="infouser"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
-                                        <li><hr class="dropdown-divider"></li>
                                         <li><button type="submit" name="cerrarses" id="cerrarses" style="float: right; margin-right:5px; border: none; background-color: white; margin-top:10px"><i class="bx bx-power-off bx-sm" style="color: #7583ff;" ></i></button></li>
                                 
                                 </form>
@@ -101,7 +100,7 @@ if(isset($_SESSION['Id_user'])){
                                             
                                             <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
 
-                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li>  
+                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li> 
 
                                             <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>  
 
@@ -113,7 +112,7 @@ if(isset($_SESSION['Id_user'])){
 
                             </li>
 
-                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label">Registrarse</label>
+                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label" autofocus>Registrarse</label>
 
                                 <ul id="columsess">
 
@@ -136,18 +135,47 @@ if(isset($_SESSION['Id_user'])){
                         <?php } ?>
                 
                     </ul>
-                </nav><!-- .nav-menu -->
-            </div><!-- End Header Container -->
+
+                </nav>
+
+                    
+                    
+
+            </div>
         </div>
-    </header><!-- End Header -->
+
+        <?php if(isset($_SESSION['unico']) == true){ ?>
+
+            <div class="alert" style="margin: 10px; background-color: gold; border: 2px solid goldenrod;" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            Este correo electrónico ya existe...
+
+            
+            </div>
+            <?php unset($_SESSION['unico']); ?>
+
+
+        <?php } ?>
+
+        <?php if(isset($_SESSION['error']) == true){ ?>
+
+            <div class="alert" style="margin: 10px; background-color :gold; border: 2px solid goldenrod;" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            Correo electrónico o Contraseña incorrectos...
+            
+            </div>
+            <?php unset($_SESSION['error']); ?>
+
+        <?php } ?>
+
+
+    </header>
     
-    <?php if(isset($_SESSION['error']) == true){ ?>
-
-        <div class="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
-        </div>
-
-    <?php } ?>
 
     <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
