@@ -42,18 +42,39 @@ if(isset($_SESSION['Id_user'])){
         <div class="container">
         <div class="header-container d-flex align-items-center">
             <div class="logo mr-auto">
-            <h1 class="text-light"><a href="/projecte2.github.io/index.php"><span>Mercado Barcelona</span></a></h1>
+            <h1 class="text-light"><a href="/projecte2.github.io/index.php"><span><?php echo $content["navbar"]["mercat"]; ?></span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="/projecte2.github.io/index.php #hero">Home</a></li>
-                    <li><a href="/projecte2.github.io/index.php #ofertas">Ofertas</a></li>
-                    <li><a href="/projecte2.github.io/index.php #tiendas">Tiendas</a></li>
+                    <li class="active"><a href="/projecte2.github.io/index.php #hero"><?php echo $content["navbar"]["home"]; ?></a></li>
+                    <li><a href="/projecte2.github.io/index.php #ofertas"><?php echo $content["navbar"]["oferta"]; ?></a></li>
+                    <li><a href="/projecte2.github.io/index.php #tiendas"><?php echo $content["navbar"]["shops"]; ?></a></li>
                 
-                    
+                    <li class="drop-down"> <i class='bx bx-world bx-sm' style="color: #7583ff; padding: 2px; margin-top: 5px;"></i>
+                        <ul>
+                            <li>
+                                <form action="<?php echo $currentPage ?>" method="post">
+                                    <input type="hidden" name="lang" value="es" />
+                                        <button type="submit" class="dropdown-item" id="idioma">Castellano</button>
+                                    </form>
+                            </li>
+                            <li>
+                                <form action="<?php echo $currentPage ?>" method="post">
+                                    <input type="hidden" name="lang" value="ca" />
+                                        <button type="submit" class="dropdown-item" id="idioma">Català</button>
+                                </form>    
+                            </li>
+                            <li>
+                                <form action="<?php echo $currentPage ?>" method="post">
+                                    <input type="hidden" name="lang" value="en" />
+                                        <button type="submit" class="dropdown-item" id="idioma">English</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
 
 
 
@@ -62,12 +83,12 @@ if(isset($_SESSION['Id_user'])){
 
                         foreach($usuarios as $usuario){ ?>
 
-                            <li class="drop-down"><a href="/projecte2.github.io/juegos.php">Juegos</a>
+                            <li class="drop-down"><a href="/projecte2.github.io/juegos.php"><?php echo $content["navbar"]["juegos"]; ?></a>
                                 <ul>
-                                    <li><a href="/projecte2.github.io/Juegos/juego.php">Fruteria</a></li>
-                                    <li><a href="/projecte2.github.io/Juegos/recogercarne.php">Carniceria</a></li>
-                                    <li><a href="/projecte2.github.io/Juegos/cesta.php">Panaderia</a></li>
-                                    <li><a href="/projecte2.github.io/Juegos/rompecabezas.php">Pescaderia</a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/juego.php"><?php echo $content["navbar"]["fruteria"]; ?></a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/recogercarne.php"><?php echo $content["navbar"]["carniceria"]; ?></a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/cesta.php"><?php echo $content["navbar"]["panaderia"]; ?></a></li>
+                                    <li><a href="/projecte2.github.io/Juegos/rompecabezas.php"><?php echo $content["navbar"]["pescaderia"]; ?></a></li>
                                 </ul>
                             </li>
 
@@ -89,42 +110,40 @@ if(isset($_SESSION['Id_user'])){
 
                         } else{ ?>
 
-                            <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label">Iniciar sesión</label>
+                            <li class="drop-down" id="botones_sesion"><label for="correo" class="col-form-label"><?php echo $content["navbar"]["login"]; ?></label>
 
                                 <ul id="columsess">
 
-                                    <h5 id="titulosess">Entra en tu perfil</h5>
+                                    <h5 id="titulosess"><?php echo $content["navbar"]["loginh5"]; ?></h5>
 
                                     <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
 
                                             
-                                            <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico"></li>
+                                            <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="<?php echo $content["navbar"]["loginemail"]; ?>"></li>
 
-                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña"></li> 
+                                            <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="<?php echo $content["navbar"]["loginpassword"]; ?>"></li> 
 
-                                            <button type="submit" id="botonsess" name="iniciarsess">Entrar</button>  
+                                            <button type="submit" id="botonsess" name="iniciarsess"><?php echo $content["navbar"]["loginbuton"]; ?></button>  
 
-
-                                      
                                     </form>
 
                                 </ul>
 
                             </li>
 
-                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label" autofocus>Registrarse</label>
+                            <li class="drop-down" id="botones_sesion"><label for="registrar" class="col-form-label" autofocus><?php echo $content["navbar"]["register"]; ?></label>
 
                                 <ul id="columsess">
 
-                                    <h5 id="titulosess">Create una cuenta</h5>
+                                    <h5 id="titulosess"><?php echo $content["navbar"]["registerh5"]; ?></h5>
 
                                     <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
 
-                                        <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="Correo Electrónico" required></li>
+                                        <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="<?php echo $content["navbar"]["registeremail"]; ?>" required></li>
 
-                                        <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="Contraseña" required></li>
+                                        <li id="iniciarsess"><input class="form-control" type="password" name="password" placeholder="<?php echo $content["navbar"]["registerpassword"]; ?>" required></li>
 
-                                        <button type="submit" id="botonsess" name="botoncrear">Crear cuenta</button>
+                                        <button type="submit" id="botonsess" name="botoncrear"><?php echo $content["navbar"]["registerbutton"]; ?></button>
 
                                     </form>
 
@@ -151,8 +170,7 @@ if(isset($_SESSION['Id_user'])){
                 <span aria-hidden="true">&times;</span>
             </button>
             
-            Este correo electrónico ya existe...
-
+            <?php echo $content["navbar"]["correoexiste"]; ?>
             
             </div>
             <?php unset($_SESSION['unico']); ?>
@@ -166,7 +184,7 @@ if(isset($_SESSION['Id_user'])){
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            Correo electrónico o Contraseña incorrectos...
+            <?php echo $content["navbar"]["correoincorrecto"]; ?>
             
             </div>
             <?php unset($_SESSION['error']); ?>

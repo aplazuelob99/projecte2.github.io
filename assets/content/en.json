@@ -13,11 +13,14 @@
         "loginh5": "Enter your profile",
         "loginemail": "Email",
         "loginpassword": "Password",
+        "loginbuton": "Log in",
         "register": "Register",
         "registerh5": "Create an account",
         "registeremail": "Email",
         "registerpassword": "Password",
-        "registerbutton": "Create account"
+        "registerbutton": "Create account",
+        "correoexiste" : "This Email already exists...",
+        "correoincorrecto": "Email or password is incorrect..."
     },
     "index":{
         "pagetitle": "Market of Barcelona",

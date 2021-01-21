@@ -13,11 +13,14 @@
         "loginh5": "Entra al teu perfil",
         "loginemail": "Correu electrònic",
         "loginpassword": "Contrasenya",
+        "loginbuton": "Entra",
         "register": "Registre",
         "registerh5": "Crea un compte",
         "registeremail": "Correu electrònic",
         "registerpassword": "Contrasenya",
-        "registerbutton": "Crear compte"
+        "registerbutton": "Crear compte",
+        "correoexiste" : "Aquest correu ja existeix...",
+        "correoincorrecto": "Correu o contrasenya incorrectes..."
     },
     "index":{
         "pagetitle": "Mercat de Barcelona",
