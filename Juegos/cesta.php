@@ -22,7 +22,7 @@
     <!-- <link rel= "stylesheet" href="../assets/css/micss.css" type="text/css">   -->
     <link href="../assets/css/style.css" rel="stylesheet"> 
     <script src="cestajs.js" language="javascript" type="text/javascript"></script>
-    <title>compra</title>
+    <title><?php echo $content["juego3"]["gametitle"]; ?></title>
 
 </head>
 <body>
@@ -43,7 +43,7 @@
       <div id="producto3" class="productos"> </div>
       <div id="contador" class="border 1px"></div>
       <div id="puntuacion" class="border 1px"></div>
-      <button type="button" id="empezar" class="border 1px">GO!!</button>
+      <button type="button" id="empezar" class="border 1px"><?php echo $content["juego2"]["gamestart"]; ?></button>
       <button type="button" id="siguiente" class="border 2px"></button>
 
     </div> 

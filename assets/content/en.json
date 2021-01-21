@@ -97,7 +97,8 @@
         "gamecontrol": "Controls"
     },
     "juego3": {
-        "gametitle": "Bakery"
+        "gametitle": "Bakery",
+        "gamestart": "Start"
     },
     "juego4": {
         "gametitle": "Fish shop"

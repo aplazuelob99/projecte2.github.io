@@ -95,7 +95,8 @@
         "gamecontrol": "Controles"
     },
     "juego3": {
-        "gametitle": "Panadería"
+        "gametitle": "Panadería",
+        "gamestart": "Empezar"
     },
     "juego4": {
         "gametitle": "Pescadería"

@@ -40,10 +40,9 @@
 
     <?php 
 
-      include_once("../navbar.php");
+    include_once("../navbar.php");
 
     ?>
-<?php echo $content["juego2"]["gametitle"]; ?>
 
     <div id="fondojuego">
         

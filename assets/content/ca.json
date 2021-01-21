@@ -96,7 +96,8 @@
         "gamecontrol": "Controls"
     },
     "juego3": {
-        "gametitle": "Fleca"
+        "gametitle": "Fleca",
+        "gamestart": "Començar"
     },
     "juego4": {
         "gametitle": "Peixateria"
