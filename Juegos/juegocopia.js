@@ -461,7 +461,7 @@ function apagarpulsador2(pulsador){
     if(indice2 == secuencia2.length){
         nivel++;
         salida.innerHTML = 'CORRECTO!';
-        swal("Perfecto veo que se te da bien , ten cuidado ahora seran 8 frutas y con mas velocidad");
+        swal("Perfecto veo que se te da bien , ten cuidado que ahora aumenta la velocidad.");
         empezar.style.cssText ='display: block;';
         puntuaje += 200;
         
@@ -507,7 +507,7 @@ function resetearpantalla3(){
 function colorsecuencia3(){
     var frutas = ['verde','rojo','amarillo','naranja','blanco','azul'];
 
-    for(i=0;i<=7;i++){
+    for(i=0;i<=5;i++){
         secuencia3.push(frutas[numAleat(0,5)]);
     }
     
@@ -638,7 +638,7 @@ function apagarpulsador3(pulsador){
         puntuaje += 300;
         puntos.innerHTML = 'Puntos: ' + puntuaje;
         salida.innerHTML = 'CORRECTO!';
-        swal("MUY BIEN HAS TERMINADO EL JUEGO !!! HAS GANADO 450 PUNTOS.");
+        swal("MUY BIEN HAS TERMINADO EL JUEGO !!! HAS GANADO 700 PUNTOS.");
         siguiente.style.cssText ="display: block"
         siguiente.addEventListener("click", siguientejuego);
         pantalla.removeEventListener('click',comprueba3);

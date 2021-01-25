@@ -95,7 +95,7 @@ if(isset($_SESSION['Id_user'])){
                         <li class="drop-down"><i class="bx bx-user-circle bx-md" style="margin-right: 5px; color: #7583ff;"></i>
                             <ul style="margin-left : -50px; border-radius: 8px; border: 2px solid #7583ff;">
 
-                                <form action="php_library/bd_controller.php" method="POST">
+                                <form action="/projecte2.github.io/php_library/bd_controller.php" method="POST">
                                     
                                         <li style="margin: 5px;" id="infouser"><?php echo $usuario['Email'] ?></li>
                                         <li style="margin: 5px;" id="infouser"><?php echo "Puntos: " . $usuario['Puntos']  ?></li>
@@ -137,7 +137,7 @@ if(isset($_SESSION['Id_user'])){
 
                                     <h5 id="titulosess"><?php echo $content["navbar"]["registerh5"]; ?></h5>
 
-                                    <form action="php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
+                                    <form action="/projecte2.github.io/php_library/bd_controller.php" method="POST" enctype="multipart/form-data">
 
                                         <li id="iniciarsess"><input class="form-control" type="email" name="correo" placeholder="<?php echo $content["navbar"]["registeremail"]; ?>" required></li>
 
@@ -190,6 +190,24 @@ if(isset($_SESSION['Id_user'])){
             <?php unset($_SESSION['error']); ?>
 
         <?php } ?>
+
+        <?php if(isset($_SESSION['nounico']) == true) { ?>
+
+            <div class="alert" style="margin: 10px; background-color :#7583ff; border: 1px solid #001bff; color:white" role="alert">
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+
+            </button>
+
+            Cuenta creada correctamente
+
+            </div>
+        <?php unset($_SESSION['nounico']); ?>
+
+
+<?php } ?>
 
 
     </header>

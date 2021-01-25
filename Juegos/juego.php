@@ -1,5 +1,5 @@
 <?php
-    $DEFAULT_LANG = "en";
+    $DEFAULT_LANG = "es";
     $currentPage = "juego.php";
 
     if (isset($_POST['lang'])) {

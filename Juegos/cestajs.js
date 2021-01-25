@@ -7,7 +7,7 @@ window.onload = function(){
 
     
     var puntuacion = 0;
-    var contador = 60;
+    var contador = 30;
 
     var botonIniciar = document.getElementById("empezar");
     var siguiente = document.getElementById("siguiente");
